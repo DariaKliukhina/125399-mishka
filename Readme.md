@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Клюхина](https://up.htmlacademy.ru/adaptive/13/user/125399).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара].
 
 ---
 
