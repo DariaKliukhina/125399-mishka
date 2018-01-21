@@ -33,9 +33,44 @@
         <header class="form__form-header">
             <h2 class="form__title">Вязание на заказ</h2>
         </header>
-
-
-
+        <div class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="form__features">Тип</h3>
+            <input type="radio" name="type" id="decore">
+            <label for="decore" class="form__product-type">Аксессуар для интерьера</label>
+            </div>
+            <div>
+                <input type="radio" name="type" id="toy">
+                <label for="toy" class="modal__form__product-type">Детская игрушка</label>
+            </div>
+            <h3 class="form__features">Цвет</h3>
+            <input type="checkbox" name="color" id="white">
+            <label for="white" class="form__product-color">Белый</label>
+            <input type="checkbox" name="color" id="gray">
+            <label for="gray" class="form__product-color">Серый</label>
+            <input type="checkbox" name="color" id="tiffany">
+            <label for="tiffany" class="form__product-color">«Тиффани»</label>
+            <input type="checkbox" name="color" id="black">
+            <label for="black" class="form__product-color">Черный</label>
+            <input type="checkbox" name="color" id="pink">
+            <label for="pink" class="form__product-color">Розовый</label>
+            <input type="checkbox" name="color" id="orange">
+            <label for="orange" class="form__product-color">Оранжевый</label>
+            <h3 class="form__features">ФИО</h3>
+            Имя: <input type="text" name="name" id="name" value="Введите ваше имя*">
+            Фамилия: <input type="text" name="name" id="fathername" value="Укажите фамилию*">
+            Отчество: <input type="text" name="name" id="surname" value="Отчество, если желаете">
+            <h3 class="form__features">Тел</h3>
+            <input type="text" name="phone" id="phhone-number" value="+7 ХХХ ХХ ХХ*" class="form__phone">
+            <h3 class="form__features">E-mail</h3>
+            <input type="text" name="mail" id="e-mail" value="Ваш Email*" class="form__e-mail">
+            <h3 class="form__features">Доп</h3>
+            <textarea class="form__wishes">
+                Опишите все ваши пожелания к заказу
+            </textarea>
+            <p class="form__necessary">*Поля обязательны для заполнения</p>
+            <button type="submit" class="form__send button">Отправить заказ</button>
+        </form>
     </section>
 </main>
 <footer class="page-footer">
