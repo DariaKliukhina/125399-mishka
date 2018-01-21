@@ -6,12 +6,11 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="#">
-    <img class="page-header__logo-image" src="http://placehold.it/95x40" alt="Милые штучки ручной работы «Mishka»">
-  </a>
   <nav class="main-nav">
+    <a class="logo">
+      <img class="logo__logo-image" src="http://placehold.it/95x40" alt="Милые штучки ручной работы «Mishka»">
+    </a>
     <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
         <a href="catalog.html">Каталог товаров</a>
@@ -30,24 +29,19 @@
 </header>
 <main class="page-main">
   <section class="product-types">
-    <header class="product-types__header">
-      <h2 class="visually-hidden">Виды товаров</h2>
-      <b class="product-typess__slogan">Милые штуки ручной работы для дома!</b>
-    </header>
-    <section class="product-types__list">
-      <section class="list-item">
-        <h2 class="list-item__title">Предметы интерьера</h2>
-        <div class="list-item__picture--decor"></div>
-      </section>
-      <section class="list-item">
-        <h2 class="list-item__title">Детские игрушки</h2>
-        <div class="list-item__picture--toys"></div>
-      </section>
-    </section>
+    <h2 class="product-types__slogan">Милые штуки ручной работы для дома!</h2>
+    <div class="product-list">
+      <div class="product-list__item">
+        <h2 class="product-list__title">Предметы интерьера</h2>
+      </div>
+      <div class="product-list__item">
+        <h2 class="product-list__title">Детские игрушки</h2>
+      </div>
+    </div>
   </section>
   <section class="week-product">
-    <h2 class="week-product__type">Вязаные корзинки</h2>
-    <h3 class="week-product__title">Товар недели</h3>
+    <h3 class="week-product__type">Вязаные корзинки</h3>
+    <h2 class="week-product__title">Товар недели</h2>
     <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
     <table class="week-product__parameters">
       <tr>
@@ -67,66 +61,40 @@
     <p class="week-product__price">Цена: 990 руб.</p>
     <button class="week-product__buy button" type="button">Заказать</button>
   </section>
-  <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <p class="modal__choose-size">Выберите размер:</p>
-    <form class="modal__sizes" action="https://echo.htmlacademy.ru" method="post">
-      <input type="radio" name="size" id="small">
-      <label for="small" class="modal__size-item--small"></label>
-      </div>
-      <div>
-        <input type="radio" name="size" id="medium">
-        <label for="medium" class="modal__size-item--medium"></label>
-      </div>
-      <div>
-        <input type="radio" name="size" id="large">
-        <label for="large" class="modal__size-item--large"></label>
-      </div>
-      <button type="submit" class="modal__add button">Добавить</button>
-    </form>
-  </section>
   <section class="about">
     <h2 class="about__title">Коротко о нас:</h2>
     <ul class="about__list">
       <li class="about__item">
-        <div class="about__icon--eco"></div>
-        <div class="about__description">Экологически чистые материалы</div>
+        <div class="about__description--eco">Экологически чистые материалы</div>
       </li>
       <li class="about__item">
-        <div class="about__icon--style"></div>
-        <div class="about__description">Скандинавский стиль по российской цене</div>
+        <div class="about__description--style">Скандинавский стиль по российской цене</div>
       </li>
       <li class="about__item">
-        <div class="about__icon--like"></div>
-        <div class="about__description">Увеличивает лайки на фотографиях</div>
+        <div class="about__description--like">Увеличивает лайки на фотографиях</div>
       </li>
       <li class="about__item">
-        <div class="about__icon--handemade"></div>
-        <div class="about__description">Связано вручную с любовью и умилением</div>
+        <div class="about__description--handmade">Связано вручную с любовью и умилением</div>
       </li>
       <li class="about__item">
-        <div class="about__icon--patriot"></div>
-        <div class="about__description">Поддержка отечественного производителя</div>
+        <div class="about__description--patriot">Поддержка отечественного производителя</div>
       </li>
       <li class="about__item">
-        <div class="about__icon--gift"></div>
-        <div class="about__description">Поставляется в подарочной упаковке</div>
+        <div class="about__description--gift">Поставляется в подарочной упаковке</div>
       </li>
     </ul>
   </section>
   <section class="reviews">
-    <h2 class="reviews__title">Отзывы </h2>
+    <h2 class="reviews__title">Отзывы</h2>
     <div class="reviews__wrapper slider">
-      <div class="reviews__list  slider__list">
-        <blockquote class="reviews__item  slider__item">
+        <blockquote class="reviews__item  review">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <p class="reviews__author-insta">@misssssiskras</p>
+          <a class="reviews__author-insta" href="#">@misssssiskras</a>
         </blockquote>
-      </div>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle visually-hidden" type="button">Назад</button>
-        <button class="slider__toggle visually-hidden" type="button">Вперед</button>
+      <p class="reviews__toggles toggle">
+        <button class="toggle__item visually-hidden" type="button">Назад</button>
+        <button class="toggle__item visually-hidden" type="button">Вперед</button>
       </p>
     </div>
     <a class="reviews__leave-comment button" href="#">Написать</a>
@@ -135,37 +103,46 @@
     <h2 class="contacts__title">Контакты</h2>
     <table class="contacts__parameters">
       <tr>
-        <td class="contacts__parameter">e-mail:</td>
+        <td class="contacts__label">e-mail:</td>
         <td class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
       </tr>
       <tr>
-        <td class="contacts__parameter">адрес:</td>
+        <td class="contacts__label">адрес:</td>
         <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
       </tr>
     </table>
     <section class="map"></section>
     <a class="contacts__write-us button" href="#">Напишите нам</a>
   </section>
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form class="sizes">
+      <label class="sizes__size-item">
+        <input type="radio" name="size" id="small">
+        <span>s</span>
+      </label>
+      <label class="sizes__size-item">
+        <input type="radio" name="size" id="medium">
+        <span>m</span>
+      </label>
+      <label class="sizes__size-item">
+        <input type="radio" name="size" id="large">
+        <span>l</span>
+      </label>
+      <button type="submit" class="modal__add button">Добавить</button>
+    </form>
+  </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
-      </li>
-    </ul>
+    <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
+    <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
+    <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
   </div>
   <div class="copyright">
     <p class="copyright__text">Разработано</p>
-    <div class="copyright__logo">
-      <a class="copyright__link" href="https://htmlacademy.ru/"></a>
-    </div>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
   </div>
 </footer>
 </body>

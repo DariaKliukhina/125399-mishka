@@ -6,12 +6,11 @@
 </head>
 <body>
 <header class="page-header">
-    <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/95x40" alt="Милые штучки ручной работы «Mishka»">
-    </a>
     <nav class="main-nav">
+        <a class="logo" href="index.html">
+            <img class="logo__logo-image" src="http://placehold.it/95x40" alt="Милые штучки ручной работы «Mishka»">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
         <ul class="main-nav__list site-list">
             <li class="site-list__item">
                 <a href="catalog.html">Каталог товаров</a>
@@ -29,34 +28,45 @@
     </nav>
 </header>
 <main class="page-main">
-    <section class="form">
-        <header class="form__form-header">
-            <h2 class="form__title">Вязание на заказ</h2>
-        </header>
+    <section class="form-page">
+        <h2 class="form-page__title">Вязание на заказ</h2>
         <div class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <h3 class="form__features">Тип</h3>
-            <input type="radio" name="type" id="decore">
-            <label for="decore" class="form__product-type">Аксессуар для интерьера</label>
-            </div>
-            <div>
-                <input type="radio" name="type" id="toy">
-                <label for="toy" class="modal__form__product-type">Детская игрушка</label>
-            </div>
-            <h3 class="form__features">Цвет</h3>
-            <input type="checkbox" name="color" id="white">
-            <label for="white" class="form__product-color">Белый</label>
-            <input type="checkbox" name="color" id="gray">
-            <label for="gray" class="form__product-color">Серый</label>
-            <input type="checkbox" name="color" id="tiffany">
-            <label for="tiffany" class="form__product-color">«Тиффани»</label>
-            <input type="checkbox" name="color" id="black">
-            <label for="black" class="form__product-color">Черный</label>
-            <input type="checkbox" name="color" id="pink">
-            <label for="pink" class="form__product-color">Розовый</label>
-            <input type="checkbox" name="color" id="orange">
-            <label for="orange" class="form__product-color">Оранжевый</label>
-            <h3 class="form__features">ФИО</h3>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form">
+            <h3 class="features-title">Тип</h3>
+            <label class="radio">
+            <input type="radio" name="type" id="decore" class="radio__control">
+                <span class="radio__label">Аксессуар для интерьера</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="type" id="toy" class="radio__control">
+                <span class="radio__label">Детская игрушка</span>
+            </label>
+            <h3 class="features-title">Цвет</h3>
+            <label class="checkbox">
+                <input type="checkbox" name="color" id="white" class="checkbox__control">
+                <span class="checkbox__label">Белый</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="color" id="gray" class="checkbox__control">
+                <span class="checkbox__label">Серый</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="color" id="tiffany" class="checkbox__control">
+                <span class="checkbox__label">«Тиффани»</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="color" id="black" class="checkbox__control">
+                <span class="checkbox__label">Черный</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="color" id="pink" class="checkbox__control">
+                <span class="checkbox__label"> Розовый</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="color" id="orange" class="checkbox__control">
+                <span class="checkbox__label">Оранжевый</span>
+            </label>
+            <h3 class="features-title">ФИО</h3>
             Имя: <input type="text" name="name" id="name" value="Введите ваше имя*">
             Фамилия: <input type="text" name="name" id="fathername" value="Укажите фамилию*">
             Отчество: <input type="text" name="name" id="surname" value="Отчество, если желаете">
@@ -64,7 +74,7 @@
             <input type="text" name="phone" id="phhone-number" value="+7 ХХХ ХХ ХХ*" class="form__phone">
             <h3 class="form__features">E-mail</h3>
             <input type="text" name="mail" id="e-mail" value="Ваш Email*" class="form__e-mail">
-            <h3 class="form__features">Доп</h3>
+            <h3 class="features-title">Доп</h3>
             <textarea class="form__wishes">
                 Опишите все ваши пожелания к заказу
             </textarea>
@@ -75,23 +85,13 @@
 </main>
 <footer class="page-footer">
     <div class="page-footer__social social">
-        <ul class="social__list">
-            <li class="social__item">
-                <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
-            </li>
-            <li class="social__item">
-                <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
-            </li>
-            <li class="social__item">
-                <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
-            </li>
-        </ul>
+        <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
+        <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
+        <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
     </div>
     <div class="copyright">
         <p class="copyright__text">Разработано</p>
-        <div class="copyright__logo">
-            <a class="copyright__link" href="https://htmlacademy.ru/"></a>
-        </div>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
     </div>
 </footer>
 </body>
