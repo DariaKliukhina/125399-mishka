@@ -29,28 +29,92 @@
     </nav>
 </header>
 <main class="page-main">
-    <footer class="page-footer">
-        <div class="page-footer__social social">
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <p class="copyright__text">Разработано</p>
-            <div class="copyright__logo">
-                <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+    <section class="catalog">
+        <header class="catalog__header">
+            <h2 class="catalog__title">Каталог товаров</h2>
+        </header>
+        <ul class="catalog__list">
+            <li class="catalog__list-item">
+                <img class="catalog__item-image--bunny" src="http://placehold.it/260x196" alt="Зайчик-попрыгайчик">
+                <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
+                <p class="catalog__item-features">Рост 30 см, вес 200 г</p>
+                <div class="cataog__item-price">
+                    <p class="catalog__price">1 200 руб.</p>
+                    <div class="catalog__price-icon"></div>
+                </div>
+            </li>
+            <li class="catalog__list-item">
+                <img class="catalog__item-image--basket" src="http://placehold.it/260x196" alt="Корзинка для белья">
+                <h3 class="catalog__item-name">Корзинка для белья</h3>
+                <p class="catalog__item-features">Диаметр 15 см, высота 10 см</p>
+                <div class="cataog__item-price">
+                    <p class="catalog__price">690 руб.</p>
+                    <div class="catalog__price-icon"></div>
+                </div>
+            </li>
+            <li class="catalog__list-item">
+                <img class="catalog__item-image--toy-basket" src="http://placehold.it/260x196"
+                     alt="Большая корзинка для игрушек">
+                <h3 class="catalog__item-name">Большая корзинка
+                    для игрушек/h3>
+                    <p class="catalog__item-features">Диаметр 30 см, высота 30 см</p>
+                    <div class="cataog__item-price">
+                        <p class="catalog__price">1 500 руб.</p>
+                        <div class="catalog__price-icon"></div>
+                    </div>
+            </li>
+        </ul>
+        <section class="production">
+            <div class="production__icon"></div>
+            <h2 class="production__title">Процесс производства</h2>
+            <video class="production__video">
+                <source src="URL">
+            </video>
+            <div class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+                как появляются наши товары.
             </div>
-        </div>
-    </footer>
+        </section>
+        <button class="catalog__buy button" type="button">Сделать заказ</button>
+        <section class="modal">
+            <h2 class="modal__title">Добавить в корзину</h2>
+            <p class="modal__choose-size">Выберите размер:</p>
+            <form class="modal__sizes">
+                <input type="radio" name="size" id="small">
+                <label for="small" class="modal__size-item--small"></label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="medium">
+                    <label for="medium" class="modal__size-item--medium"></label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="large">
+                    <label for="large" class="modal__size-item--large"></label>
+                </div>
+                <button type="submit" class="modal__add button">Добавить</button>
+            </form>
+        </section>
+    </section>
 </main>
-
+<footer class="page-footer">
+    <div class="page-footer__social social">
+        <ul class="social__list">
+            <li class="social__item">
+                <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
+            </li>
+            <li class="social__item">
+                <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
+            </li>
+            <li class="social__item">
+                <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <div class="copyright__logo">
+            <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
