@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "node.normalize.scss": "^3.0.3",
+    "normalize": "^0.3.1"
   }
 }

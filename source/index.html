@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>Mishka</title>
 </head>
 <body>
@@ -118,17 +120,17 @@
     <h2 class="modal__title">Добавить в корзину</h2>
     <p class="modal__text">Выберите размер:</p>
     <form class="sizes">
-      <label class="sizes__size-item">
-        <input type="radio" name="size" id="small">
-        <span>s</span>
+      <label class="size-item">
+        <input type="radio" name="size" id="small" class="size-item__control">
+        <span class="size-item__label">s</span>
       </label>
       <label class="sizes__size-item">
-        <input type="radio" name="size" id="medium">
-        <span>m</span>
+        <input type="radio" name="size" id="medium" class="size-item__control">
+        <span class="size-item__label">m</span>
       </label>
       <label class="sizes__size-item">
-        <input type="radio" name="size" id="large">
-        <span>l</span>
+        <input type="radio" name="size" id="large" class="size-item__control">
+        <span class="size-item__label">l</span>
       </label>
       <button type="submit" class="modal__add button">Добавить</button>
     </form>
