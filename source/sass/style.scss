@@ -1,3 +1,17 @@
-@import "blocks/main-nav";
-@import "/node_modules/node.normalize.scss/_normalize";
-body { background: red; }
+@import "../../node_modules/node.normalize.scss/_normalize";
+@import "../sass/blocks/main-nav";
+@import "../sass/blocks/page-slogan";
+@import "../sass/blocks/page-title";
+@import "../sass/blocks/product-list";
+@import "../sass/blocks/week-product";
+@import "../sass/blocks/about";
+@import "../sass/blocks/reviews";
+@import "../sass/blocks/contacts";
+@import "../sass/blocks/map";
+body{
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}

@@ -1,0 +1,23 @@
+.product-list__item{
+  padding: 20px 30px;
+  &:nth-child(odd){
+    background-color: #63d1bb;
+  }
+  &:nth-child(even){
+    background-color: #56c3b2;
+  }
+  &--decor{
+    background-image: url(../img/decor.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+  }
+  &--toy{
+    background-image: url(../img/toy.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+  }
+}
+.product-list__title{
+  color: #ffffff;
+  font-size: 19px;
+}

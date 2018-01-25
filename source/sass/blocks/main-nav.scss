@@ -1,1 +1,8 @@
-.main-nav{ background: red; }
+.main-nav{
+  background: #ffffff;
+  height: 80px;
+  padding: 0 30px;
+}
+.main-nav__list{
+  display: none;
+}
