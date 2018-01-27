@@ -1,8 +1,10 @@
 .page-slogan{
   background-color: #fafafa;
-  height: 284px;
-  padding: 0 30px;
+  min-height: 284px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 18%;
+  display: flex;
 }

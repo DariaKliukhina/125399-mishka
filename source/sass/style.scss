@@ -1,5 +1,9 @@
 @import "../../node_modules/node.normalize.scss/_normalize";
+@import "../sass/blocks/visually-hidden";
+@import "../sass/blocks/variable";
 @import "../sass/blocks/global";
+@import "../sass/blocks/page-header";
+@import "../sass/blocks/page-footer";
 @import "../sass/blocks/main-nav";
 @import "../sass/blocks/page-slogan";
 @import "../sass/blocks/page-title";
@@ -9,4 +13,15 @@
 @import "../sass/blocks/reviews";
 @import "../sass/blocks/contacts";
 @import "../sass/blocks/map";
+@import "../sass/blocks/write-us";
+@import "../sass/blocks/modal";
+@import "../sass/blocks/page-top";
+@import "../sass/blocks/products";
+@import "../sass/blocks/product";
+@import "../sass/blocks/production";
+@import "../sass/blocks/form";
+@import "../sass/blocks/features-title";
+@import "../sass/blocks/radio";
+@import "../sass/blocks/checkbox";
+@import "../sass/blocks/input";
 

@@ -1,5 +1,7 @@
 .product-list__item{
   padding: 20px 30px;
+  display: block;
+  text-decoration: none;
   &:nth-child(odd){
     background-color: #63d1bb;
   }

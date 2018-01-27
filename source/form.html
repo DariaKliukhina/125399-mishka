@@ -9,28 +9,30 @@
 <body>
 <header class="page-header">
   <nav class="main-nav">
-    <a class="logo" href="index.html">
-      <img class="logo__logo-image" src="img/logo.png" width="86" height="35" alt="Милые штучки ручной работы «Mishka»">
-    </a>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__top">
+      <a class="logo">
+        <img class="logo__logo-image" src="img/logo.png" width="86" height="35" alt="Милые штучки ручной работы «Mishka»">
+      </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    </div>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="catalog.html">Каталог товаров</a>
+        <a href="catalog.html" class="site-list__link">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Вязание на заказ</a>
+        <a href="form.html" class="site-list__link">Вязание на заказ</a>
       </li>
       <li class="site-list__item site-list__item--search">
-        <a href="#">Поиск по сайту</a>
+        <a href="#" class="site-list__link">Поиск по сайту</a>
       </li>
       <li class="site-list__item site-list__item--order">
-        <a href="#">Корзина: пока пуста</a>
+        <a href="#" class="site-list__link">Корзина: пока пуста</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page-main">
-  <h2 class="page-title">Вязание на заказ</h2>
+  <h2 class="page-title page-top">Вязание на заказ</h2>
   <form action="https://echo.htmlacademy.ru" method="post" class="form">
     <div class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
     <h3 class="features-title">Тип</h3>
@@ -68,12 +70,21 @@
       <span class="checkbox__label">Оранжевый</span>
     </label>
     <h3 class="features-title">ФИО</h3>
-    Имя: <input type="text" name="name" id="name" value="Введите ваше имя*">
-    Фамилия: <input type="text" name="name" id="fathername" value="Укажите фамилию*">
-    Отчество: <input type="text" name="name" id="surname" value="Отчество, если желаете">
-    <h3 class="form__features">Тел</h3>
+    <label class="input">
+      <span class="input__label">Имя:</span>
+      <input type="text" name="name" id="name" value="Введите ваше имя*">
+    </label>
+    <label class="input">
+      <span class="input__label">Фамилия:</span>
+      <input type="text" name="name" id="fathername" value="Укажите фамилию*">
+    </label>
+    <label class="input">
+      <span class="input__label">Отчество:</span>
+      <input type="text" name="name" id="surname" value="Отчество, если желаете">
+    </label>
+    <h3 class="features-title">Тел</h3>
     <input type="text" name="phone" id="phhone-number" value="+7 ХХХ ХХ ХХ*" class="form__phone">
-    <h3 class="form__features">E-mail</h3>
+    <h3 class="features-title">E-mail</h3>
       <input type="text" name="mail" id="e-mail" value="Ваш Email*" class="form__e-mail">
       <h3 class="features-title">Доп</h3>
       <textarea class="form__wishes">
