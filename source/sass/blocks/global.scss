@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Open Sans", "Times New Roman", sans-serif;
+  font-family: "Open Sans";
   src: url("../fonts/opensans.woff2")format("woff2"),
     url("../fonts/opensans.woff")format("woff");
 }
@@ -10,9 +10,12 @@
   font-weight: 700;
 }
 body{
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   max-width: 320px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 15px;
   line-height: 24px;
   color: $gray;

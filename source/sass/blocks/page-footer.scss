@@ -1,13 +1,7 @@
 .page-footer{
   background-color: $light-gray;
-  .page-footer__social{
-    min-height: 80px;
-    border-bottom: 1px solid $middle-gray;
-  }
 }
-.copyright{
+.page-footer__social{
   min-height: 80px;
-  .copyright__text{
-    margin: 0;
-  }
+  border-bottom: 1px solid $middle-gray;
 }

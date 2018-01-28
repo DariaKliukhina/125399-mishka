@@ -1,25 +1,22 @@
 .product-list__item{
-  padding: 20px 30px;
-  display: block;
+  padding-left: 30px;
+  padding-right: 120px;
+  min-height: 102px;
+  box-sizing: border-box;
   text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   &:nth-child(odd){
     background-color: #63d1bb;
   }
   &:nth-child(even){
     background-color: #56c3b2;
   }
-  &--decor{
-    background-image: url(../img/decor.png);
-    background-repeat: no-repeat;
-    background-position: 90% center;
-  }
-  &--toy{
-    background-image: url(../img/toy.png);
-    background-repeat: no-repeat;
-    background-position: 90% center;
-  }
 }
 .product-list__title{
   color: #ffffff;
   font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
 }

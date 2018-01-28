@@ -1,8 +1,7 @@
 @import "../../node_modules/node.normalize.scss/_normalize";
-@import "../sass/blocks/visually-hidden";
 @import "../sass/blocks/variable";
 @import "../sass/blocks/global";
-@import "../sass/blocks/page-header";
+@import "../sass/blocks/button";
 @import "../sass/blocks/page-footer";
 @import "../sass/blocks/main-nav";
 @import "../sass/blocks/page-slogan";
@@ -24,4 +23,7 @@
 @import "../sass/blocks/radio";
 @import "../sass/blocks/checkbox";
 @import "../sass/blocks/input";
+@import "../sass/blocks/copyright";
+@import "../sass/blocks/social";
+@import "../sass/blocks/production-wrapper";
 

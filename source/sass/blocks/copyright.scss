@@ -1,0 +1,21 @@
+.copyright{
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright__text{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
+  font-weight: bold;
+}
+.copyright__link{
+  width: 30px;
+  height: 30px;
+  background-color: $gray;
+  display: block;
+  margin-left: 28px;
+}

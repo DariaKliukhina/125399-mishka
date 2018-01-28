@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Mishka catalog</title>
 </head>
@@ -16,17 +15,17 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
     </div>
     <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+      <li class="main-nav__item">
+        <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
       </li>
-      <li class="site-list__item">
-        <a href="form.html" class="site-list__link">Вязание на заказ</a>
+      <li class="main-nav__item">
+        <a href="form.html" class="main-nav__link">Вязание на заказ</a>
       </li>
-      <li class="site-list__item site-list__item--search">
-        <a href="#" class="site-list__link">Поиск по сайту</a>
+      <li class="main-nav__item main-nav__item--search">
+        <a href="#" class="main-nav__link">Поиск по сайту</a>
       </li>
-      <li class="site-list__item site-list__item--order">
-        <a href="#" class="site-list__link">Корзина: пока пуста</a>
+      <li class="main-nav__item main-nav__item--order">
+        <a href="#" class="main-nav__link">Корзина: пока пуста</a>
       </li>
     </ul>
   </nav>
@@ -80,14 +79,16 @@
       </div>
     </article>
   </section>
+  <div class="production-wrapper">
     <section class="production">
       <div class="production__top">
         <h2 class="production__title">Процесс производства</h2>
       </div>
       <img class="production__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
       <div class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-      <button class="buy-button button" type="button">Сделать заказ</button>
+      <button class="production__buy-button button" type="button">Сделать заказ</button>
     </section>
+  </div>
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
@@ -110,9 +111,9 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__social social">
-    <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
-    <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
-    <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
+    <a class="social__link social__link--facebook" href="#">Фейсбуке</a>
+    <a class="social__link social__link--instagram" href="#">Инстаграме</a>
+    <a class="social__link social__link--twitter" href="#">Твиттер</a>
   </div>
   <div class="copyright">
     <p class="copyright__text">Разработано</p>
