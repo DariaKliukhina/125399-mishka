@@ -1,7 +1,10 @@
+.product-list{
+  display: flex;
+  flex-direction: column;
+}
 .product-list__item{
-  padding-left: 30px;
-  padding-right: 120px;
   min-height: 102px;
+  width: 100%;
   box-sizing: border-box;
   text-decoration: none;
   display: flex;
@@ -19,4 +22,15 @@
   font-size: 19px;
   margin-top: 0;
   margin-bottom: 0;
+  max-width: 140px;
 }
+/*
+@media (min-width: 768px){
+  .product-list{
+    flex-direction: row;
+  }
+  .product-list__item{
+    flex-grow: 1;
+  }
+}
+*/

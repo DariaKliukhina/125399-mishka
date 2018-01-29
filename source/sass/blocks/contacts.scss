@@ -2,8 +2,6 @@
   background-color: $white;
   padding-top: 40px;
   padding-bottom: 22px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .contacts__title{
   font-size: 18px;
@@ -11,6 +9,7 @@
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 12px;
 }
 .contacts__mail{
   text-decoration: none;
@@ -20,7 +19,6 @@
   width: 100%;
   font-size: 15px;
   line-height: 30px;
-  margin-top: 12px;
 }
 .contacts__label,
 .contacts__value{
