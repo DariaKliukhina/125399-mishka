@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Mishka form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Mishka form</title>
 </head>
 <body>
 <header class="page-header">
-    <nav class="main-nav">
-        <a class="logo" href="index.html">
-            <img class="logo__logo-image" src="http://placehold.it/95x40" alt="Милые штучки ручной работы «Mishka»">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-                <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-                <a href="#">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-                <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--order">
-                <a href="#">Корзина: пока пуста</a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="main-nav">
+    <div class="main-nav__top  wrapper">
+      <a class="logo" href="index.html">
+        <img class="logo__logo-image" src="img/logo.png" width="86" height="35" alt="Милые штучки ручной работы «Mishka»">
+      </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    </div>
+    <ul class="main-nav__list site-list">
+      <li class="main-nav__item">
+        <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+      </li>
+      <li class="main-nav__item main-nav__item--search">
+        <a href="#" class="main-nav__link">Поиск по сайту</a>
+      </li>
+      <li class="main-nav__item main-nav__item--order">
+        <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="page-main">
-    <h2 class="page-title">Вязание на заказ</h2>
-    <form action="https://echo.htmlacademy.ru" method="post" class="form">
-        <div class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
-        <h3 class="features-title">Тип</h3>
-        <label class="radio">
-            <input type="radio" name="type" id="decore" class="radio__control">
-                <span class="radio__label">Аксессуар для интерьера</span>
-            </label>
-            <label class="radio">
-                <input type="radio" name="type" id="toy" class="radio__control">
-                <span class="radio__label">Детская игрушка</span>
-            </label>
-            <h3 class="features-title">Цвет</h3>
-            <label class="checkbox">
-                <input type="checkbox" name="color" id="white" class="checkbox__control">
-                <span class="checkbox__label">Белый</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="color" id="gray" class="checkbox__control">
-                <span class="checkbox__label">Серый</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="color" id="tiffany" class="checkbox__control">
-                <span class="checkbox__label">«Тиффани»</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="color" id="black" class="checkbox__control">
-                <span class="checkbox__label">Черный</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="color" id="pink" class="checkbox__control">
-                <span class="checkbox__label"> Розовый</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" name="color" id="orange" class="checkbox__control">
-                <span class="checkbox__label">Оранжевый</span>
-            </label>
-            <h3 class="features-title">ФИО</h3>
-            Имя: <input type="text" name="name" id="name" value="Введите ваше имя*">
-            Фамилия: <input type="text" name="name" id="fathername" value="Укажите фамилию*">
-            Отчество: <input type="text" name="name" id="surname" value="Отчество, если желаете">
-            <h3 class="form__features">Тел</h3>
-            <input type="text" name="phone" id="phhone-number" value="+7 ХХХ ХХ ХХ*" class="form__phone">
-            <h3 class="form__features">E-mail</h3>
-            <input type="text" name="mail" id="e-mail" value="Ваш Email*" class="form__e-mail">
-            <h3 class="features-title">Доп</h3>
-            <textarea class="form__wishes">
-                Опишите все ваши пожелания к заказу
-            </textarea>
-            <p class="form__necessary">*Поля обязательны для заполнения</p>
-            <button type="submit" class="form__send button">Отправить заказ</button>
-        </form>
+  <h2 class="page-title page-top  wrapper">Вязание на заказ</h2>
+  <form action="https://echo.htmlacademy.ru" method="post" class="form  wrapper">
+    <div class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+    <h3 class="features-title">Тип</h3>
+    <div class="form__type">
+      <label class="radio">
+        <input type="radio" name="type" id="decore" class="radio__control">
+        <span class="radio__label">Аксессуар для интерьера</span>
+      </label>
+      <label class="radio">
+        <input type="radio" name="type" id="toy" class="radio__control">
+        <span class="radio__label">Детская игрушка</span>
+      </label>
+    </div>
+    <h3 class="features-title">Цвет</h3>
+    <div class="form__color">
+      <label class="checkbox">
+        <input type="checkbox" name="color" id="white" class="checkbox__control">
+        <span class="checkbox__label">Белый</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="color" id="gray" class="checkbox__control">
+        <span class="checkbox__label">Серый</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="color" id="tiffany" class="checkbox__control">
+        <span class="checkbox__label">«Тиффани»</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="color" id="black" class="checkbox__control">
+        <span class="checkbox__label">Черный</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="color" id="pink" class="checkbox__control">
+        <span class="checkbox__label"> Розовый</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="color" id="orange" class="checkbox__control">
+        <span class="checkbox__label">Оранжевый</span>
+      </label>
+    </div>
+    <h3 class="features-title">ФИО</h3>
+    <div class="form__name">
+      <label class="input">
+        <span class="input__label">Имя:</span>
+        <input type="text" name="name" id="name" value="Введите ваше имя*" class="input__field">
+      </label>
+      <label class="input">
+        <span class="input__label">Фамилия:</span>
+        <input type="text" name="name" id="fathername" value="Укажите фамилию*" class="input__field">
+      </label>
+      <label class="input">
+        <span class="input__label">Отчество:</span>
+        <input type="text" name="name" id="surname" value="Отчество, если желаете" class="input__field">
+      </label>
+    </div>
+    <h3 class="features-title">Тел</h3>
+    <input type="text" name="phone" id="phone-number" value="+7 ХХХ ХХ ХХ*" class="form__phone form__phone-position">
+    <h3 class="features-title">E-mail</h3>
+      <input type="text" name="mail" id="e-mail" value="Ваш Email*" class="form__e-mail form__e-mail-position">
+      <h3 class="features-title">Доп</h3>
+      <textarea class="form__wishes form__wishes-position">Опишите все ваши пожелания к заказу</textarea>
+      <p class="form__necessary">*Поля обязательны для заполнения</p>
+      <button type="submit" class="form__send button">Отправить заказ</button>
+  </form>
 </main>
 <footer class="page-footer">
-    <div class="page-footer__social social">
-        <a class="social__link social__link--facebook visually-hidden" href="#">Фейсбуке</a>
-        <a class="social__link social__link--instagram visually-hidden" href="#">Инстаграме</a>
-        <a class="social__link social__link--twitter visually-hidden" href="#">Твиттер</a>
-    </div>
-    <div class="copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-    </div>
+  <div class="page-footer__social social">
+    <a class="social__link social__link--facebook" href="#">Фейсбуке</a>
+    <a class="social__link social__link--instagram" href="#">Инстаграме</a>
+    <a class="social__link social__link--twitter" href="#">Твиттер</a>
+  </div>
+  <div class="copyright">
+    <p class="copyright__text">Разработано</p>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+  </div>
 </footer>
 </body>
 </html>

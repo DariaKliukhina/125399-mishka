@@ -1,0 +1,35 @@
+.about {
+  background-color: $white;
+  padding-bottom: 26px;
+}
+
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about__list {
+  line-height: 20px;
+  font-weight: bold;
+  color: $black;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about__item {
+  display: block;
+  padding-top: 56px;
+  padding-bottom: 27px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
