@@ -2,17 +2,17 @@
   padding-left: 30px;
   padding-right: 30px;
 }
-/*
-@media (min-width: 768px){
+
+@media (min-width: $tablet-width){
   .wrapper{
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-@media (min-width: 1250px){
+@media (min-width: $desktop-width){
   .wrapper{
     padding-left: 100px;
     padding-right: 100px;
   }
 }
-*/
+
