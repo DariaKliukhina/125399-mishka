@@ -3,6 +3,7 @@
   padding-top: 40px;
   padding-bottom: 22px;
 }
+
 .contacts__title {
   font-size: 18px;
   color: $black;
@@ -11,24 +12,29 @@
   margin-bottom: 0;
   padding-bottom: 12px;
 }
+
 .contacts__mail {
   text-decoration: none;
   color: $gray;
 }
+
 .contacts__parameters {
   width: 100%;
   font-size: 15px;
   line-height: 30px;
 }
+
 .contacts__label,
 .contacts__value {
   padding-top: 16px;
   padding-bottom: 15px;
 }
+
 .contacts__label {
   min-width: 68px;
   vertical-align: top;
 }
+
 .contacts__value {
   padding-left: 8px;
 }

@@ -3,6 +3,7 @@
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
@@ -11,12 +12,14 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .reviews__item {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 32px;
   margin-left: 0;
 }
+
 .reviews__text {
   margin-top: 0;
   margin-bottom: 0;
@@ -25,6 +28,7 @@
   font-size: 15px;
   line-height: 30px;
 }
+
 .reviews__author-name {
   font-weight: bold;
   color: $black;
@@ -32,10 +36,12 @@
   padding-bottom: 6px;
   display: inline-block;
 }
+
 .reviews__author-insta {
   text-decoration: none;
   color: $gray;
 }
+
 .reviews__toggles {
   min-height: 52px;
   margin-bottom: 38px;
@@ -43,6 +49,7 @@
 .reviews__toggles {
   display: flex;
 }
+
 .reviews__toggle-item {
   background-color: $white;
   font-size: 0;
@@ -51,6 +58,7 @@
   min-height: 50px;
   flex-grow: 1;
 }
+
 .reviews__leave-comment {
   display: block;
   width: 100%;

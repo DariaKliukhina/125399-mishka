@@ -1,25 +1,31 @@
 .form {
   padding-bottom: 55px;
 }
+
 .form__text {
   font-size: 13px;
   padding-top: 20px;
   padding-bottom: 15px;
 }
+
 .form__type {
   padding-bottom: 26px;
   padding-top: 14px;
 }
+
 .form__necessary {
   font-size: 14px;
 }
+
 .form__color {
   padding-top: 9px;
   padding-bottom: 7px;
 }
+
 .form__name {
   padding-top: 18px;
 }
+
 .form__phone,
 .form__e-mail {
   border: none;
@@ -32,17 +38,21 @@
   font-size: 17px;
   line-height: 18px;
 }
+
 .form__phone-position {
   margin-top: 4px;
 }
+
 .form__e-mail-position {
   margin-top: 5px;
 }
+
 .form__necessary {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .form__wishes {
   min-height: 142px;
   width: 100%;
@@ -53,10 +63,12 @@
   box-sizing: border-box;
   padding: 15px;
 }
+
 .form__wishes-position {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+
 .form__send {
   width: 100%;
   margin-top: 28px;
