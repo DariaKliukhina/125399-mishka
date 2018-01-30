@@ -7,10 +7,12 @@
   font-weight: bold;
   padding-top: 16px;
   padding-bottom: 16px;
+
   &:hover {
     background-color: $gray;
     color: $white;
   }
+
   &:active,
   &:focus {
     background-color: $gray;
