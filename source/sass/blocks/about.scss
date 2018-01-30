@@ -1,8 +1,8 @@
-.about{
+.about {
   background-color: $white;
   padding-bottom: 26px;
 }
-.about__title{
+.about__title {
   font-size: 25px;
   line-height: 30px;
   color: $black;
@@ -12,7 +12,7 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-.about__list{
+.about__list {
   line-height: 20px;
   font-weight: bold;
   color: $black;
@@ -21,11 +21,11 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-.about__item{
+.about__item {
   display: block;
   padding-top: 56px;
   padding-bottom: 27px;
-  &:last-child{
+  &:last-child {
     padding-bottom: 0;
   }
 }

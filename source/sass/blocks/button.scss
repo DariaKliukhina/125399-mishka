@@ -1,4 +1,4 @@
-.button{
+.button {
   background-color: $white;
   border: 2px solid $gray;
   font-size: 17px;
@@ -7,12 +7,12 @@
   font-weight: bold;
   padding-top: 16px;
   padding-bottom: 16px;
-  &:hover{
+  &:hover {
     background-color: $gray;
     color: $white;
   }
   &:active,
-  &:focus{
+  &:focus {
     background-color: $gray;
     color: $half-gray;
   }

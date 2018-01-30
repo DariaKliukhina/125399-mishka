@@ -1,38 +1,38 @@
-.product{
+.product {
   border: 1px solid $middle-gray;
   margin-bottom: 29px;
 }
-.product__name{
+.product__name {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 6px;
   font-weight: bold;
   font-size: 17px;
 }
-.product__about{
+.product__about {
   padding-top:19px;
   margin-right: 27px;
   padding-bottom: 19px;
   margin-left: 27px;
   border-bottom: 1px solid $light-gray;
 }
-.product__link{
+.product__link {
   text-decoration: none;
   color: $black;
 }
-.product__features{
+.product__features {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 13px;
   line-height: 30px;
 }
-.product__item-price{
+.product__item-price {
   padding-top: 20px;
   padding-bottom: 28px;
   padding-right: 28px;
   padding-left: 28px;
 }
-.product__price{
+.product__price {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
