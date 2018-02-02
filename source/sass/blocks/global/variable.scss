@@ -1,0 +1,23 @@
+$white: #ffffff;
+$black: #000000;
+$gray: #444444;
+$light-gray: #f9f9f9;
+$middle-gray: #e5e5e5;
+$aquamarine: #63d1bb;
+$aquamarine-dark: #46c1ae;
+$aqua-dark--30: rgba(70, 193, 174, 0.3);
+$black--30: rgba(0, 0, 0, 0.3);
+$black--60: rgba(0, 0, 0, 0.6);
+$gray--30: rgba(68, 68, 68, 0.3);
+$base-color: $gray;
+$mobile-only: 320px;
+$tablet: 768px;
+$desktop: 1250px;
+$min-width-tablet: "(min-width: #{$tablet})";
+$min-width-desktop: "(min-width: #{$desktop})";
+$mobile-width-only: "(max-width: #{$mobile-only})";
+/*
+@media #{$min-width-desktop}
+@media #{$min-width-tablet}
+
+*/

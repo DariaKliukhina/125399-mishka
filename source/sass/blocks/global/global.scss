@@ -11,6 +11,16 @@
   font-weight: 700;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   margin-top: 0;
@@ -19,5 +29,7 @@ body {
   margin-right: auto;
   font-size: 15px;
   line-height: 24px;
-  color: $gray;
+  color: $base-color;
+  min-width: 320px;
+  max-width: 1250px;
 }

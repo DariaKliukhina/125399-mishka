@@ -8,14 +8,14 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $gray;
     color: $white;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     background-color: $gray;
-    color: $half-gray;
+    color: $gray--30;
   }
 }

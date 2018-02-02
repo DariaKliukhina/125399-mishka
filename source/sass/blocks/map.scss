@@ -1,6 +1,12 @@
 .map {
-  min-height: 458px;
+  min-height: 457px;
   background-color: $middle-gray;
   background-image: url("../img/map-mobile@1x.jpg");
   background-size: contain;
+  display: block;
+
+  @media #{$min-width-desktop} {
+    min-width: 30%;
+    flex-grow: 1;
+  }
 }

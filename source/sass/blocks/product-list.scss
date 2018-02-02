@@ -5,7 +5,7 @@
 
 .product-list__item {
   min-height: 102px;
-  width: 100%;
+  padding-left: 30px;
   box-sizing: border-box;
   text-decoration: none;
   display: flex;
@@ -28,7 +28,7 @@
   max-width: 140px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
 
   .product-list {
     flex-direction: row;
@@ -38,5 +38,17 @@
 
   .product-list__item {
     flex-grow: 1;
+  }
+
+  .product-list__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .product-list__wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }

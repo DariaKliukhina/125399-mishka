@@ -33,6 +33,14 @@
   color: $black;
   font-weight: bold;
   font-size: 17px;
+
+  &:hover {
+    color: $black--60;
+  }
+
+  &:active {
+    color: $black--30;
+  }
 }
 
 .main-nav__delivery {

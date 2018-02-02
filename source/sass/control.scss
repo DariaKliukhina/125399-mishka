@@ -1,0 +1,62 @@
+/*<div class="group__filter filter-programs">
+  <label class="filter-programs__loss radio" for="loss">
+      <input class="radio__control" type="radio" name="loss" id="loss" checked>
+      <span class="radio__indicator"></span>
+                                Похудение
+   </label>
+  <label class="filter-programs__weight radio" for="weight-prog">
+       <input class="radio__control" type="radio" name="loss" id="weight-prog" >
+         <span class="radio__indicator"></span>
+                                Набор массы
+        </label>
+  <label class="filter-programs__idk radio" for="idk">
+         <input class="radio__control" type="radio" name="loss" id="idk" >
+           <span class="radio__indicator"></span>
+                                Не знаю (нужен ваш совет)
+   </label>
+</div>
+*/
+.radio {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.radio:last-child {
+  margin-bottom: 0;
+}
+
+.radio__control {
+  display: none;
+}
+
+.radio__indicator {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.radio__indicator, label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.radio__control:checked + .radio__indicator::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background: #68b738;
+  border-radius: 2px;
+}
+.radio__indicator,
+.radio:checked + .radio__indicator::before {
+  border-radius: 50%;
+}

@@ -1,35 +1,71 @@
 .about {
   background-color: $white;
-  padding-bottom: 26px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $black;
+
+  @media #{$min-width-desktop} {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media #{$min-width-tablet} {
+    flex-direction: row;
+  }
+
+  @media #{$min-width-desktop} {
+    flex-direction: row;
+  }
 }
 
 .about__title {
   font-size: 25px;
   line-height: 30px;
   color: $black;
-  font-weight: bold;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
-}
 
-.about__list {
-  line-height: 20px;
-  font-weight: bold;
-  color: $black;
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  @media #{$min-width-tablet} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media #{$min-width-desktop} {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__item {
   display: block;
   padding-top: 56px;
   padding-bottom: 27px;
+  padding-right: 45px;
 
-  &:last-child {
-    padding-bottom: 0;
+  &--eco {
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    fill: $gray--30;
+  }
+
+  @media #{$min-width-tablet} {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media #{$min-width-desktop} {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 22px;
   }
 }

@@ -18,7 +18,17 @@
   padding-bottom: 16px;
   padding-top: 8px;
   margin-bottom: 22px;
-  color: $input-gray;
+  color: $gray--30;
   font-size: 17px;
   line-height: 18px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $aquamarine;
+  }
+
+  &:active {
+    border-bottom: 2px solid $aquamarine;
+    color: $gray;
+  }
 }

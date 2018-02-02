@@ -9,6 +9,14 @@
   padding-bottom: 6px;
   font-weight: bold;
   font-size: 17px;
+
+  &:hover {
+    color: $black--60;
+  }
+
+  &:active {
+    color: $black--30;
+  }
 }
 
 .product__about {
