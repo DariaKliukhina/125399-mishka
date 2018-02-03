@@ -2,12 +2,14 @@
   background-color: $white;
   padding-top: 40px;
   padding-bottom: 22px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
 
   @media #{$min-width-desktop} {
-    padding-right: 42%;
-
+    padding-right: 630px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -16,11 +18,14 @@
 
   @media #{$min-width-tablet} {
     margin-bottom: 50px;
+    margin-right: auto;
   }
 
   @media #{$min-width-desktop} {
     padding-top: 82px;
+    padding-right: 0;
     margin-right: auto;
+    margin-bottom: 70px;
   }
 }
 
@@ -97,4 +102,19 @@
 
 .contacts__value {
   margin-left: 8px;
+}
+
+.contacts__write-us {
+  margin-top: 38px;
+  margin-bottom: 38px;
+
+  @media #{$min-width-tablet} {
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media #{$min-width-desktop} {
+    margin-left: 175px;
+  }
 }

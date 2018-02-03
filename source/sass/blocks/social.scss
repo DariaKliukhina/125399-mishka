@@ -6,6 +6,10 @@
   padding-bottom: 25px;
   justify-content: center;
   border-bottom: 1px solid $middle-gray;
+
+  @media #{$min-width-tablet} {
+    border-bottom: none;
+  }
 }
 
 .social__link {
