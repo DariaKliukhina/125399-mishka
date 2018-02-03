@@ -6,7 +6,21 @@
   flex-direction: column;
 
   @media #{$min-width-desktop} {
-    flex-direction: row;
+    padding-right: 42%;
+
+  }
+}
+
+.contacts__contacts-wrapper{
+  margin-bottom: 40px;
+
+  @media #{$min-width-tablet} {
+    margin-bottom: 50px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-top: 82px;
+    margin-right: auto;
   }
 }
 
@@ -83,20 +97,4 @@
 
 .contacts__value {
   margin-left: 8px;
-}
-
-.contacts__write-us {
-  display: block;
-  text-align: center;
-  color: $gray;
-  text-decoration: none;
-  box-sizing: border-box;
-  margin-top: 38px;
-  margin-bottom: 38px;
-  max-width: 230px;
-
-  @media #{$min-width-tablet} {
-
-  }
-
 }

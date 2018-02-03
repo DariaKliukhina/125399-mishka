@@ -1,6 +1,6 @@
 .week-product {
   background-color: $white;
-  padding-top: 28px;
+  padding-top: 22px;
   padding-bottom: 38px;
 }
 
@@ -10,30 +10,32 @@
   color: $black;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0;
+  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
 .week-product__title {
   font-size: 17px;
   line-height: 20px;
-  color: #63d1bb;
+  color: $aquamarine;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 6;
 }
 
 .week-product__price {
   font-weight: bold;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
+  margin-top: 0;
 }
 
 .week-product__description {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 22px;
+  padding-top: 16px;
   padding-bottom: 16px;
 }
 
@@ -56,7 +58,9 @@
   margin-bottom: 28px;
 }
 
+.week-product__image {
+  margin-bottom: 16px;
+}
 .week-product__buy {
   width: 100%;
-  margin-top: 12px;
 }

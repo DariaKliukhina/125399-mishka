@@ -6,11 +6,12 @@
 .product-list__item {
   min-height: 102px;
   padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   &:nth-child(odd) {
     background-color: #63d1bb;
   }

@@ -6,7 +6,8 @@
   display: block;
 
   @media #{$min-width-desktop} {
-    min-width: 30%;
-    flex-grow: 1;
+    position: absolute;
+    width: 525px;
+    left: 58%;
   }
 }

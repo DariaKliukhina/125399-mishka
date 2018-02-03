@@ -1,0 +1,14 @@
+.write-us {
+  margin-top: 38px;
+  margin-bottom: 38px;
+
+  @media #{$min-width-tablet} {
+    max-width: 230px;
+    margin-left: auto;
+    margin: auto;
+  }
+
+  @media #{$min-width-desktop} {
+    margin-left: 175px;
+  }
+}

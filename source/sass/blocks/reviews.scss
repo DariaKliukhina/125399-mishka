@@ -43,12 +43,12 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 24px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   font-size: 15px;
   line-height: 30px;
 
   @media #{$min-width-tablet}{
-    padding-bottom: 60px;
+    margin-bottom: 34px;
   }
 }
 
@@ -89,13 +89,6 @@
 }
 
 .reviews__leave-comment {
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-  text-decoration: none;
-  color: $gray;
-  padding-left: 38px;
-  padding-right: 38px;
   order: 4;
 
   @media #{$min-width-tablet} {
