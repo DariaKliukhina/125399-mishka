@@ -5,4 +5,8 @@
   line-height: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @media #{$min-width-tablet} {
+    width: 21.7%;
+  }
 }

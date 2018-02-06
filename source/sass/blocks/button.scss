@@ -7,15 +7,21 @@
   font-weight: bold;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 38px;
+  padding-right: 38px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: $gray;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $gray;
     color: $white;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     background-color: $gray;
-    color: $half-gray;
+    color: $white--30;
   }
 }

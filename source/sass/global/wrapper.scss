@@ -1,0 +1,12 @@
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1150px;
+
+  @media #{$min-width-tablet} {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

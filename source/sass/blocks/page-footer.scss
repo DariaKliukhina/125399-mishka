@@ -1,8 +1,24 @@
 .page-footer {
   background-color: $light-gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.page-footer__social {
-  min-height: 80px;
-  border-bottom: 1px solid $middle-gray;
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  @media #{$min-width-tablet} {
+    flex-direction: row;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media #{$min-width-tablet} {
+    display: block;
+    margin-right: auto;
+  }
 }

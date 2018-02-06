@@ -1,0 +1,30 @@
+.main-top {
+  background-color: $light-gray;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 0;
+}
+
+.main-top__slogan-block {
+
+  min-height: 284px;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  display: flex;
+
+  @media #{$min-width-tablet} {
+    min-height: 630px;
+    padding-top: 300px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-top: 190px;
+  }
+}
+
+.main-top__slogan {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,5 +1,48 @@
 .form {
   padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__row {
+
+  @media #{$min-width-tablet} {
+    &:nth-child(odd) {
+      background-color: $white;
+    }
+
+    &:nth-child(even) {
+      background-color: $light-gray;
+    }
+
+    &:last-child {
+      background-color: $white;
+    }
+  }
+}
+
+.form__row-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$min-width-tablet} {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &--send {
+      justify-content: space-between;
+    }
+  }
+}
+
+.form__contact-row {
+
+  @media #{$min-width-tablet} {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: $light-gray;
+  }
 }
 
 .form__text {
@@ -20,19 +63,7 @@
 
 .form__name {
   padding-top: 18px;
-}
-
-.form__phone,
-.form__e-mail {
-  border: none;
-  border-bottom: 2px solid $black;
   width: 100%;
-  padding-bottom: 16px;
-  padding-top: 8px;
-  margin-bottom: 22px;
-  color: $input-gray;
-  font-size: 17px;
-  line-height: 18px;
 }
 
 .form__phone-position {
@@ -53,11 +84,15 @@
   min-height: 142px;
   width: 100%;
   border: 2px solid $gray;
-  color: $input-gray;
+  color: $gray;
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
   padding: 15px;
+
+  &::placeholder {
+    color: $gray--30;
+  }
 }
 
 .form__wishes-position {
@@ -66,6 +101,5 @@
 }
 
 .form__send {
-  width: 100%;
   margin-top: 28px;
 }
