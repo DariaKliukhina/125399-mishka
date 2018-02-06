@@ -1,9 +1,23 @@
 .page-top {
   min-height: 178px;
   background-color: $light-gray;
-  padding-bottom: 5px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 74px;
+  padding-bottom: 74px;
   box-sizing: border-box;
+
+  @media #{$min-width-tablet} {
+    padding-top: 100px;
+  }
+}
+
+.page-top__page-title {
+  font-weight: bold;
+  color: $black;
+  font-size: 27px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
 }

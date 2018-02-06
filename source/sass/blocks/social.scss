@@ -2,13 +2,20 @@
   font-size: 0;
   line-height: 0;
   display: flex;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-bottom: 25px;
-  justify-content: center;
   border-bottom: 1px solid $middle-gray;
+
+  .social__content {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @media #{$min-width-tablet} {
     border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

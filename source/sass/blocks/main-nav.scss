@@ -1,12 +1,18 @@
 .main-nav {
   background: $white;
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
   z-index: 10;
+
+  @media #{$min-width-tablet} {
+    max-height: 88px;
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
 
   @media #{$min-width-tablet} {
     flex-direction: row;
@@ -15,11 +21,16 @@
   }
 
   @media #{$min-width-desktop} {
+    max-width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: flex-start;
   }
 }
 
-.main-nav-group {
+.main-nav__group {
   &--3 {
     display: none;
   }
@@ -31,7 +42,6 @@
     &--1 {
       order: 3;
       flex-grow: 1;
-      background-color: $light-gray;
       padding-left: 50px;
     }
 
@@ -45,16 +55,15 @@
 
     &--3 {
       display: none;
+      padding-left: 50px;
     }
   }
 
   @media #{$min-width-desktop} {
     &--1 {
       order: 1;
-      background-color: $white;
       flex-grow: 0;
       width: 40%;
-      padding-left: 100px;
       border-bottom: 1px solid $gray--10;
     }
 
@@ -62,15 +71,12 @@
       order: 3;
       flex-grow: 0;
       width: 40%;
-      padding-right: 100px;
     }
 
     &--3 {
       display: flex;
       order: 4;
       flex-grow: 1;
-      padding-left: 100px;
-      background-color: $light-gray;
     }
   }
 }
@@ -83,7 +89,7 @@
   border-bottom: 1px solid $light-gray;
 
   @media #{$min-width-tablet} {
-   display: block;
+    display: block;
     flex-grow: 1;
     border-bottom: none;
     padding-top: 20px;
@@ -115,9 +121,9 @@
 .main-nav__item {
   display: block;
   list-style: none;
-  padding-top: 28px;
+  padding-top: 29px;
   padding-right: 30px;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   padding-left: 70px;
   border-bottom: 1px solid $light-gray;
   text-decoration: none;
@@ -158,8 +164,6 @@
 
   @media #{$min-width-tablet} {
     border-bottom: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
     padding-left: 0;
     flex-shrink: 0;
 
@@ -205,15 +209,14 @@
     display: block;
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 25px;
     padding-right: 50px;
     order: 4;
-    background-color: $light-gray;
   }
 
   @media #{$min-width-desktop} {
     order: 5;
     margin-left: auto;
-    padding-right: 100px;
   }
 }
 

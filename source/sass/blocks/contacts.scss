@@ -45,7 +45,7 @@
   @media #{$min-width-desktop} {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 175px;
+    padding-left: 225px;
   }
 }
 
@@ -67,7 +67,7 @@
 
   @media #{$min-width-desktop} {
     flex-direction: column;
-    padding-left: 175px;
+    padding-left: 225px;
   }
 }
 
@@ -115,6 +115,6 @@
   }
 
   @media #{$min-width-desktop} {
-    margin-left: 175px;
+    margin-left: 225px;
   }
 }

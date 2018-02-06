@@ -5,7 +5,7 @@
   position: relative;
 
   @media #{$min-width-desktop} {
-    padding-left: 275px;
+    padding-left: 225px;
   }
 }
 
@@ -65,7 +65,8 @@
 .week-product__price {
   font-weight: bold;
   text-align: center;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
+  padding-top: 26px;
   margin-top: 0;
 }
 
@@ -89,10 +90,7 @@
 
 .week-product__value {
   padding-left: 18px;
-}
-
-.week-product__table-position {
-  margin-bottom: 28px;
+  padding-right: 18px;
 }
 
 .week-product__image {
