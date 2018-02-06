@@ -13,7 +13,7 @@
   }
 }
 
-.contacts__contacts-wrapper{
+.contacts__contacts-wrapper {
   margin-bottom: 40px;
 
   @media #{$min-width-tablet} {
@@ -49,12 +49,6 @@
   }
 }
 
-.contacts__mail {
-  text-decoration: none;
-  color: $gray;
-  padding-bottom: 5px;
-}
-
 .contacts__parameters {
   font-size: 15px;
   line-height: 30px;
@@ -83,10 +77,13 @@
 
 .contacts__mail {
   border-bottom: 1px solid $aquamarine-dark;
+  text-decoration: none;
+  color: $gray;
+  padding-bottom: 5px;
 
   &:hover,
-  &:focus{
-  color: $aquamarine-dark;
+  &:focus {
+    color: $aquamarine-dark;
   }
 
   &:active {

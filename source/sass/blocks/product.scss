@@ -31,8 +31,7 @@
   }
 }
 
-.product__image{
-
+.product__image {
   @media #{$min-width-tablet} {
     height: 100%;
   }
@@ -52,10 +51,6 @@
   &:active {
     color: $black--30;
   }
-}
-
-.product__about {
-
 }
 
 .product__link {

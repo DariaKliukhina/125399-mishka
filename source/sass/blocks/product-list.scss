@@ -4,10 +4,10 @@
   box-sizing: border-box;
 
   @media #{$min-width-tablet} {
-      flex-direction: row;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   @media #{$min-width-tablet} {
     max-width: 1150px;
@@ -25,6 +25,7 @@
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
+
   &:nth-child(odd) {
     background-color: #63d1bb;
   }
@@ -47,7 +48,6 @@
 }
 
 .product-list__wrapper {
-
   @media #{$min-width-tablet} {
     padding-left: 50px;
     padding-right: 50px;

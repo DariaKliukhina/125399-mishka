@@ -10,7 +10,6 @@
 }
 
 .week-product__title-group {
-
   @media #{$min-width-tablet} {
     display: flex;
     justify-content: space-between;
@@ -26,6 +25,7 @@
     padding-right: 578px;
   }
 }
+
 .week-product__type {
   font-size: 25px;
   line-height: 30px;
@@ -107,6 +107,7 @@
     right: 100px;
   }
 }
+
 .week-product__buy {
   width: 100%;
 }
