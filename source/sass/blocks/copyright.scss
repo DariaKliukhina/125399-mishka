@@ -1,27 +1,34 @@
 .copyright {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 10px;
-
 
   @media #{$min-width-tablet} {
     margin-left: auto;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
   }
+}
+
+.copyright__logo {
+
 }
 
 .copyright__text {
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 28px;
   font-size: 19px;
   line-height: 18px;
   color: $black;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .copyright__link {
+  display: flex;
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
+  align-items: flex-end;
+  padding-top: 22px;
+  padding-bottom: 10px;
 }

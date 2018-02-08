@@ -8,5 +8,12 @@
 
   @media #{$min-width-tablet} {
     width: 21.7%;
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+
+  @media #{$min-width-desktop} {
+    width: 16.6%;
+    padding-left: 62px;
   }
 }

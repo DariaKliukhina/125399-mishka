@@ -1,6 +1,5 @@
 .reviews {
-  background-color: $white;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -9,31 +8,57 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
-    margin-bottom: 70px;
+    padding-top: 79px;
+    padding-bottom: 120px;
   }
 
   @media #{$min-width-desktop} {
     padding-left: 175px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 72px;
+    padding-bottom: 170px;
+  }
+}
+
+.reviews__wrapper {
+  @media #{$min-width-tablet} {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  @media #{$min-width-desktop} {
+    background-image: none;
   }
 }
 
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
-  color: $black;
   font-weight: bold;
+  color: $black;
   margin-top: 0;
   margin-bottom: 0;
   order: 0;
+
+  @media #{$min-width-tablet} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media #{$min-width-desktop} {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 6px;
+  }
 }
 
 .reviews__item {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
   margin-left: 0;
   order: 2;
   display: flex;
@@ -49,20 +74,36 @@
   line-height: 30px;
 
   @media #{$min-width-tablet} {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
+    padding-top: 44px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-top: 44px;
+    font-size: 17px;
+    padding-right: 75px;
+    margin-bottom: 10px;
   }
 }
 
 .reviews__author-name {
   font-weight: bold;
+  font-size: 17px;
   color: $black;
   font-style: normal;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
+  padding-top: 4px;
   display: inline-block;
+
+  @media #{$min-width-tablet} {
+    font-size: 18px;
+  }
 }
 
 .reviews__author-insta {
   text-decoration: none;
+  font-size: 17px;
+  line-height: 30px;
   color: $gray;
 }
 
@@ -94,5 +135,9 @@
 
   @media #{$min-width-tablet} {
     order: 1;
+  }
+
+  @media #{$min-width-desktop} {
+    margin-top: auto;
   }
 }

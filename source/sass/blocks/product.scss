@@ -1,16 +1,17 @@
 .product {
   border: 1px solid $middle-gray;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 
   @media #{$min-width-tablet} {
     flex-direction: row;
+    margin-bottom: 54px;
   }
 
   @media #{$min-width-desktop} {
     flex-direction: column;
-    width: 30%;
+    width: 30.1%;
     margin-right: 4.8%;
 
     &:nth-child(3n) {
@@ -22,18 +23,56 @@
 .product__about-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
   padding-right: 24px;
   padding-left: 24px;
 
   @media #{$min-width-tablet} {
+    justify-content: space-between;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  @media #{$min-width-desktop} {
     justify-content: space-between;
   }
 }
 
 .product__image {
   @media #{$min-width-tablet} {
-    height: 100%;
+    height: 332px;
+    width: 332px;
+  }
+
+  @media #{$min-width-desktop} {
+    width: 100%;
+    height: 464px;
+  }
+}
+
+.product__image-block {
+  @media #{$min-width-tablet} {
+    width: 50%;
+    height: 332px;
+  }
+
+  @media #{$min-width-desktop} {
+    width: 100%;
+    height: 464px;
+  }
+}
+
+.product__about {
+  padding-top: 20px;
+  padding-bottom: 18px;
+
+  @media #{$min-width-tablet} {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-top: 24px;
+    padding-bottom: 14px;
   }
 }
 
@@ -51,6 +90,10 @@
   &:active {
     color: $black--30;
   }
+
+  @media #{$min-width-tablet} {
+    font-size: 20px;
+  }
 }
 
 .product__link {
@@ -63,12 +106,20 @@
   margin-bottom: 0;
   font-size: 13px;
   line-height: 30px;
+
+  @media #{$min-width-tablet} {
+    font-size: 15px;
+  }
 }
 
 .product__item-price {
   border-top: 1px solid $light-gray;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+
+  @media #{$min-width-desktop} {
+    padding-bottom: 26px;
+  }
 }
 
 .product__price {
@@ -76,4 +127,14 @@
   margin-bottom: 0;
   font-weight: bold;
   color: $black;
+
+
+  @media #{$min-width-tablet} {
+    font-size: 17px;
+    padding-left: 5px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-left: 0;
+  }
 }
