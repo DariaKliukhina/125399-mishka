@@ -98,7 +98,7 @@
     margin-right: 0;
     flex-shrink: 0;
     order: 1;
-    border-bottom: 1px solid $gray--10;
+    border-color: $gray--10;
   }
 
   @media #{$min-width-desktop} {
@@ -194,7 +194,6 @@
   }
 
   @media #{$min-width-desktop} {
-
     &--order {
       padding-left: 84px;
     }
