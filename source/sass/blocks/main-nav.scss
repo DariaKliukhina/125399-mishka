@@ -22,8 +22,6 @@
 
   @media #{$min-width-desktop} {
     max-width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
     justify-content: flex-start;
@@ -92,7 +90,7 @@
     display: block;
     flex-grow: 1;
     border-bottom: none;
-    padding-top: 20px;
+    padding-top: 27px;
     padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 56px;
@@ -100,6 +98,7 @@
     margin-right: 0;
     flex-shrink: 0;
     order: 1;
+    border-color: $gray--10;
   }
 
   @media #{$min-width-desktop} {
@@ -120,9 +119,9 @@
 .main-nav__item {
   display: block;
   list-style: none;
-  padding-top: 29px;
-  padding-right: 30px;
-  padding-bottom: 29px;
+  padding-top: 28px;
+  padding-right: 34px;
+  padding-bottom: 24px;
   padding-left: 70px;
   border-bottom: 1px solid $light-gray;
   text-decoration: none;
@@ -150,6 +149,11 @@
     }
   }
 
+  &--order,
+  &--search {
+    position: relative;
+  }
+
   &--order:hover {
     .main-nav__order-logo-style {
       fill: $aquamarine;
@@ -168,7 +172,7 @@
     flex-shrink: 0;
 
     &--search {
-      padding-right: 0;
+      padding-right: 22px;
       padding-left: 60px;
       font-size: 0;
       border-right: 1px solid $gray--10;
@@ -177,15 +181,55 @@
 
     &--order {
       padding-right: 0;
-      padding-left: 60px;
+      padding-left: 82px;
+      padding-top: 30px;
+      padding-bottom: 24px;
+    }
+
+    &--catalog,
+    &--form {
+      font-size: 15px;
+      padding-top: 16px;
+    }
+  }
+
+  @media #{$min-width-desktop} {
+    &--order {
+      padding-left: 84px;
+    }
+
+    &--catalog,
+    &--form {
+      font-size: 17px;
+      padding-top: 32px;
+    }
+
+    &--form {
+      padding-left: 36px;
+    }
+
+    &--sale {
+      padding-left: 28px;
+    }
+
+    &--new,
+    &--sale {
+      padding-top: 16px;
+      font-size: 15px;
     }
   }
 }
 
 .main-nav__search-logo,
 .main-nav__order-logo {
-  margin-left: -40px;
-  margin-right: 18px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  @media #{$min-width-tablet} {
+    top: 34px;
+    left: 32px;
+  }
 }
 
 .main-nav__search-logo-style,
@@ -207,7 +251,7 @@
 
   @media #{$min-width-tablet} {
     display: block;
-    padding-top: 25px;
+    padding-top: 16px;
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 50px;

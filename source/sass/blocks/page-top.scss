@@ -2,22 +2,17 @@
   min-height: 178px;
   background-color: $light-gray;
   display: flex;
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding-top: 72px;
+  padding-bottom: 76px;
   box-sizing: border-box;
 
   @media #{$min-width-tablet} {
-    padding-top: 100px;
+    padding-top: 96px;
+    padding-bottom: 80;
   }
-}
 
-.page-top__page-title {
-  font-weight: bold;
-  color: $black;
-  font-size: 27px;
-  line-height: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
+  @media #{$min-width-desktop} {
+    padding-top: 94px;
+    padding-bottom: 102px;
+  }
 }

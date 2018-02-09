@@ -1,8 +1,35 @@
 .radio {
   display: block;
-  padding-top: 8px;
-  padding-bottom: 4px;
-  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 64px;
+  position: relative;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media #{$min-width-tablet} {
+      width: 52px;
+      height: 52px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media #{$min-width-tablet} {
+    padding-left: 82px;
+    padding-bottom: 42px;
+    padding-top: 15px;
+  }
 }
 
 .radio__label {
@@ -10,4 +37,12 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+
+  @media #{$min-width-tablet} {
+    font-size: 19px;
+  }
+}
+
+.radio__control {
+  display: none;
 }

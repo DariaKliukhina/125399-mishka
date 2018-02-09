@@ -2,10 +2,39 @@
   padding-bottom: 55px;
   display: flex;
   flex-direction: column;
+
+  @media #{$min-width-tablet} {
+    padding-top: 23px;
+    padding-bottom: 50px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-bottom: 48px;
+  }
+}
+
+.form__text {
+  font-size: 13px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  @media #{$min-width-tablet} {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 78px;
+    padding-bottom: 32px;
+  }
+
+  @media #{$min-width-desktop} {
+
+    padding-top: 124px;
+    padding-bottom: 32px;
+    padding-left: 19.5%;
+    padding-right: 19.5%;
+  }
 }
 
 .form__row {
-
   @media #{$min-width-tablet} {
     &:nth-child(odd) {
       background-color: $white;
@@ -17,6 +46,26 @@
 
     &:last-child {
       background-color: $white;
+    }
+
+    &--color {
+      padding-top: 50px;
+      padding-bottom: 24px;
+    }
+
+    &--name {
+      padding-top: 52px;
+    }
+
+    &--else {
+      padding-top: 52px;
+      padding-bottom: 48px;
+    }
+  }
+
+  @media #{$min-width-desktop} {
+    &--else {
+      padding-bottom: 44px;
     }
   }
 }
@@ -33,10 +82,23 @@
       justify-content: space-between;
     }
   }
+
+  @media #{$min-width-desktop} {
+    &--send {
+      padding-left: 19.5%;
+      padding-right: 19.5%;
+    }
+  }
+}
+
+.form__contact-row-wrapper {
+  @media #{$min-width-tablet} {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
 }
 
 .form__contact-row {
-
   @media #{$min-width-tablet} {
     display: flex;
     flex-direction: row;
@@ -45,39 +107,83 @@
   }
 }
 
-.form__text {
-  font-size: 13px;
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-
 .form__type {
-  padding-bottom: 26px;
+  padding-bottom: 20px;
   padding-top: 14px;
+
+  @media #{$min-width-tablet} {
+    padding-top: 0;
+    width: 78.3%;
+    padding-left: 22px;
+    padding-bottom: 26px;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-left: 0;
+  }
 }
 
 .form__color {
   padding-top: 9px;
   padding-bottom: 7px;
+
+  @media #{$min-width-tablet} {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 78.3%;
+  }
+
+  @media #{$min-width-desktop} {
+    padding-left: 0;
+  }
 }
 
 .form__name {
   padding-top: 18px;
   width: 100%;
+
+  @media #{$min-width-tablet} {
+    padding-left: 22px;
+    width: 78.3%;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+
+
+  @media #{$min-width-desktop} {
+    padding-left: 0;
+  }
 }
 
-.form__phone-position {
-  margin-top: 4px;
-}
-
+.form__phone-position,
 .form__e-mail-position {
-  margin-top: 5px;
+  @media #{$min-width-tablet} {
+    padding-left: 22px;
+    width: 78.3%;
+  }
+
+
+  @media #{$min-width-desktop} {
+    padding-left: 0;
+  }
 }
 
 .form__necessary {
   font-size: 14px;
   margin-top: 0;
+  padding-top: 8px;
   margin-bottom: 0;
+  padding-bottom: 8px;
+
+  @media #{$min-width-tablet} {
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+  }
 }
 
 .form__wishes {
@@ -93,13 +199,38 @@
   &::placeholder {
     color: $gray--30;
   }
+
+
+  @media #{$min-width-tablet} {
+    font-size: 19px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .form__wishes-position {
   margin-top: 15px;
   margin-bottom: 5px;
+
+  @media #{$min-width-tablet} {
+    margin-left: 28px;
+    width: 78.3%;
+    margin-top: 0;
+  }
+
+  @media #{$min-width-desktop} {
+    margin-right: 16.6%;
+    margin-left: 18px;
+  }
 }
 
 .form__send {
-  margin-top: 28px;
+  margin-top: 20px;
+
+  @media #{$min-width-tablet} {
+    order: 1;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
