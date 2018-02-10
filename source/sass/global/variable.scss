@@ -1,18 +1,21 @@
 $white: #ffffff;
+$white--30: rgba(255, 255, 255, 0.3);
+$white--90:  rgba(255, 255, 255, 0.9);
 $black: #000000;
+$black--25: rgba(0, 0, 0, 0.25);
+$black--30: rgba(0, 0, 0, 0.3);
+$black--60: rgba(0, 0, 0, 0.6);
 $gray: #444444;
+$gray--10: rgba(68, 68, 68, 0.1);
+$gray--30: rgba(68, 68, 68, 0.3);
 $light-gray: #f9f9f9;
 $middle-gray: #e5e5e5;
+$modal-border: #c7c7c7;
 $aquamarine: #63d1bb;
 $aquamarine--30: rgba(99, 209, 187, 0.3);
 $aquamarine-dark: #46c1ae;
 $aquamarine-darker: #56c3b2;
 $aqua-dark--30: rgba(70, 193, 174, 0.3);
-$black--30: rgba(0, 0, 0, 0.3);
-$black--60: rgba(0, 0, 0, 0.6);
-$gray--10: rgba(68, 68, 68, 0.1);
-$gray--30: rgba(68, 68, 68, 0.3);
-$white--30: rgba(255, 255, 255, 0.3);
 $base-color: $gray;
 $mobile-only: 320px;
 $tablet: 768px;
@@ -20,8 +23,5 @@ $desktop: 1150px;
 $min-width-tablet: "(min-width: #{$tablet})";
 $min-width-desktop: "(min-width: #{$desktop})";
 $mobile-width-only: "(max-width: #{$mobile-only})";
-/*
-@media #{$min-width-desktop}
-@media #{$min-width-tablet}
-
-*/
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -50,6 +50,7 @@
     @media #{$min-width-desktop} {
       font-size: 53px;
       line-height: 57px;
+      z-index: 1;
     }
   }
 }
@@ -109,6 +110,7 @@
 
     @media #{$min-width-desktop} {
       padding-bottom: 44px;
+      z-index: 1;
     }
   }
 }
@@ -152,13 +154,13 @@
 .week-product__image {
   @media #{$min-width-tablet} {
     position: absolute;
-    top: 120px;
+    top: 150px;
     right: 50px;
   }
 
   @media #{$min-width-desktop} {
-    top: 100px;
-    right: 100px;
+    top: 70px;
+    right: 50px;
   }
 }
 
