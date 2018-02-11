@@ -54,12 +54,12 @@
         <div class="wrapper form__row-wrapper">
           <h3 class="features-title">Тип</h3>
           <div class="form__type">
-            <label class="radio">
-              <input type="radio" name="type" id="decore" class="radio__control">
+            <input type="radio" name="type" id="decore" class="radio__control" checked>
+            <label class="radio" for="decore">
               <span class="radio__label">Аксессуар для интерьера</span>
             </label>
-            <label class="radio">
-              <input type="radio" name="type" id="toy" class="radio__control">
+            <input type="radio" name="type" id="toy" class="radio__control">
+            <label class="radio" for="toy">
               <span class="radio__label">Детская игрушка</span>
             </label>
           </div>
@@ -69,30 +69,30 @@
         <div class="wrapper form__row-wrapper">
           <h3 class="features-title">Цвет</h3>
           <div class="form__color">
-              <label class="checkbox">
-                <input type="checkbox" name="color" id="white" class="checkbox__control">
-                <span class="checkbox__label">Белый</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="color" id="gray" class="checkbox__control">
-                <span class="checkbox__label">Серый</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="color" id="tiffany" class="checkbox__control">
-                <span class="checkbox__label">«Тиффани»</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="color" id="black" class="checkbox__control">
-                <span class="checkbox__label">Черный</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="color" id="pink" class="checkbox__control">
-                <span class="checkbox__label"> Розовый</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" name="color" id="orange" class="checkbox__control">
-                <span class="checkbox__label">Оранжевый</span>
-              </label>
+            <input type="checkbox" name="color" id="white" class="checkbox__control" checked>
+            <label class="checkbox" for="white">
+              <span class="checkbox__label">Белый</span>
+            </label>
+            <input type="checkbox" name="color" id="gray" class="checkbox__control" checked>
+            <label class="checkbox" for="gray">
+              <span class="checkbox__label">Серый</span>
+            </label>
+            <input type="checkbox" name="color" id="tiffany" class="checkbox__control">
+            <label class="checkbox" for="tiffany">
+              <span class="checkbox__label">«Тиффани»</span>
+            </label>
+            <input type="checkbox" name="color" id="black" class="checkbox__control">
+            <label class="checkbox" for="black">
+              <span class="checkbox__label">Черный</span>
+            </label>
+            <input type="checkbox" name="color" id="pink" class="checkbox__control">
+            <label class="checkbox" for="pink">
+              <span class="checkbox__label"> Розовый</span>
+            </label>
+            <input type="checkbox" name="color" id="orange" class="checkbox__control">
+            <label class="checkbox" for="orange">
+              <span class="checkbox__label">Оранжевый</span>
+            </label>
           </div>
         </div>
       </div>
@@ -102,11 +102,11 @@
           <div class="form__name">
             <label class="input">
               <span class="input__label">Имя:</span>
-              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" class="input__field">
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" class="input__field"  required>
             </label>
               <label class="input">
                 <span class="input__label">Фамилия:</span>
-                <input type="text" name="name" id="fathername" placeholder="Укажите фамилию*" class="input__field">
+                <input type="text" name="name" id="fathername" placeholder="Укажите фамилию*" class="input__field"  required>
               </label>
               <label class="input">
                 <span class="input__label">Отчество:</span>
@@ -120,13 +120,13 @@
           <div class="form__contact-row form__row--number">
             <h3 class="features-title">Тел</h3>
             <div class="form__phone-position">
-              <input type="text" name="phone" id="phone-number" placeholder="+7 ХХХ ХХ ХХ*" class="input__field input__field--phone">
+              <input type="text" name="phone" id="phone-number" placeholder="+7 ХХХ ХХ ХХ*" class="input__field input__field--phone"  required>
             </div>
           </div>
           <div class="form__contact-row form__row--mail">
             <h3 class="features-title">E-mail</h3>
             <div class=" form__e-mail-position">
-              <input type="text" name="mail" id="e-mail" placeholder="Ваш Email*" class="input__field input__field--mail">
+              <input type="text" name="mail" id="e-mail" placeholder="Ваш Email*" class="input__field input__field--mail"  required>
             </div>
           </div>
         </div>

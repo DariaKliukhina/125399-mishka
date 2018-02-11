@@ -193,6 +193,13 @@
   box-sizing: border-box;
   padding: 15px;
 
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid $aquamarine;
+    outline: none;
+  }
+
   &::placeholder {
     color: $gray--30;
   }

@@ -31,7 +31,13 @@
   }
 
   &:nth-child(even) {
-    background-color: $aquamarine-darker;
+    background-color: $aquamarine-dark-item;
+  }
+
+  &--decor {
+    background-image: url(../img/icon-interior.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
   }
 
   @media #{$min-width-tablet} {

@@ -15,6 +15,7 @@
   width: 100%;
   height: 100%;
   background-color: $white--90;
+  z-index: 8;
 }
 
 .modal {
@@ -42,8 +43,8 @@
   }
 
   @media #{$min-width-desktop} {
-    margin-left: 25%;
-    margin-right: 25%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -55,13 +56,14 @@
   margin-right: auto;
 
   @media #{$min-width-tablet} {
-    width: 343px;
+    width: 354px;
   }
 }
 
 .modal__title {
   font-size: 25px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   color: $black;
   margin-right: auto;
@@ -69,6 +71,11 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+
+  @media #{$min-width-tablet} {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal__text {
@@ -81,6 +88,11 @@
   margin-bottom: 0;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  @media #{$min-width-tablet} {
+    padding-top: 20px;
+    font-size: 17px;
+  }
 }
 
 .modal__sizes {
@@ -112,6 +124,10 @@
 
 .modal__size-control {
   display: none;
+
+  &:checked + .modal__size-item {
+    border: 2px solid $aquamarine;
+  }
 }
 
 .modal__size-label {
@@ -124,5 +140,19 @@
 .modal__add {
   color: $white;
   background-color: $aquamarine;
-  border-color: $aquamarine;
+  border: 2px solid $aquamarine;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 38px;
+  padding-right: 38px;
+  display: block;
+  text-align: center;
+
+  &:active {
+    color: $white--30;
+  }
 }

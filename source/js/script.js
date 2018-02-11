@@ -18,6 +18,19 @@ close.addEventListener("click", function (evt) {
   popup.classList.remove("modal__show");
   overlay.classList.remove("modal__overlay-show")
 });
+overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal__show");
+  overlay.classList.remove("modal__overlay-show")
+});
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal__show")) {
+      popup.classList.remove("modal__show");
+      overlay.classList.remove("modal__overlay-show")
+    }
+  }
+});
 menuToggle.addEventListener("click", function (evt) {
   evt.preventDefault();
   menugroup1.classList.toggle("display-none");
