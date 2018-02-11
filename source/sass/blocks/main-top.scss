@@ -17,6 +17,7 @@
       background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
+
   @media #{$min-width-desktop} {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-size: 1150px auto;
