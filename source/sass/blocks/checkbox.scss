@@ -5,6 +5,19 @@
   padding-left: 64px;
   position: relative;
 
+  &:hover {
+    &::before {
+      border: 2px solid $aquamarine;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid $black--30;
+    }
+  }
+
+
   &::before {
     content: "";
     display: block;
@@ -14,23 +27,30 @@
     position: absolute;
     left: 0;
     top: 4px;
+    cursor: pointer;
 
     @media #{$min-width-tablet} {
       width: 54px;
       height: 52px;
       top: 0;
+      left: 22px;
+    }
+
+    @media #{$min-width-desktop} {
+      left: 0;
     }
   }
 
   @media #{$min-width-tablet} {
-    padding-left: 82px;
-    padding-right: 60px;
+    padding-left: 104px;
+    padding-right: 20px;
     padding-bottom: 38px;
     width: 50%;
   }
 
   @media #{$min-width-desktop} {
     width: 32%;
+    padding-left: 84px;
   }
 }
 
@@ -45,4 +65,27 @@
 
 .checkbox__control {
   display: none;
+
+  &:checked + .checkbox::after {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 11px;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+    transform: rotate(-45deg);
+
+    @media #{$min-width-tablet} {
+      left: 38px;
+      top: 18px;
+    }
+
+    @media #{$min-width-desktop} {
+      left: 16px;
+      top: 18px;
+    }
+  }
 }

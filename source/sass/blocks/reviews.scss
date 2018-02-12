@@ -14,9 +14,6 @@
 
   @media #{$min-width-desktop} {
     padding-left: 175px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
     padding-top: 72px;
     padding-bottom: 170px;
   }
@@ -26,11 +23,17 @@
   @media #{$min-width-tablet} {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
     background-position: top left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media #{$min-width-desktop} {
-    background-image: none;
+    background-position-x: 50px;
   }
 }
 

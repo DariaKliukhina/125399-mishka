@@ -38,26 +38,19 @@
 }
 
 .product__image {
-  @media #{$min-width-tablet} {
-    height: 332px;
-    width: 332px;
-  }
-
-  @media #{$min-width-desktop} {
-    width: 100%;
-    height: 464px;
-  }
+  width: 100%;
+  height: auto;
 }
 
 .product__image-block {
   @media #{$min-width-tablet} {
     width: 50%;
-    height: 332px;
+    min-height: 328px;
   }
 
   @media #{$min-width-desktop} {
     width: 100%;
-    height: 464px;
+    min-height: 464px;
   }
 }
 

@@ -22,11 +22,16 @@
   }
 }
 
+.production__video-container {
+  position: relative;
+}
+
 .production__video {
+  width: 100%;
+
   @media #{$min-width-tablet} {
     order: 1;
     margin-bottom: 30px;
-    width: 100%;
     min-height: 456px;
     background-size: contain;
     background-color: $light-gray;
@@ -36,6 +41,26 @@
     height: 100%;
   }
 }
+
+.production__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-50%) translateX(-50%) scale(1.2);
+    transition-duration: 1s;
+  }
+
+  &:active {
+    transform: translateY(-50%) translateX(-50%) scale(0.8);
+    transition-duration: 1s;
+    opacity: 0.3;
+  }
+}
+
 
 .production__video-block {
   @media #{$min-width-desktop} {

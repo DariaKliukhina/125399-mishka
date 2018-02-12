@@ -130,15 +130,10 @@
   @media #{$min-width-tablet} {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 22px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 78.3%;
-  }
-
-  @media #{$min-width-desktop} {
-    padding-left: 0;
   }
 }
 
@@ -156,6 +151,7 @@
 
   @media #{$min-width-desktop} {
     padding-left: 0;
+    padding-right: 11.7%;
   }
 }
 
@@ -169,6 +165,7 @@
 
   @media #{$min-width-desktop} {
     padding-left: 0;
+    padding-right: 11.7%;
   }
 }
 
@@ -195,6 +192,13 @@
   line-height: 18px;
   box-sizing: border-box;
   padding: 15px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid $aquamarine;
+    outline: none;
+  }
 
   &::placeholder {
     color: $gray--30;

@@ -31,7 +31,13 @@
   }
 
   &:nth-child(even) {
-    background-color: $aquamarine-darker;
+    background-color: $aquamarine-dark-item;
+  }
+
+  &--decor {
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
   }
 
   @media #{$min-width-tablet} {
@@ -42,11 +48,15 @@
 }
 
 .product-list__title {
-  color: #ffffff;
+  color: $white;
   font-size: 19px;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 140px;
+
+  &:active {
+    color: $white--30;
+  }
 
   @media #{$min-width-tablet} {
     font-size: 20px;
