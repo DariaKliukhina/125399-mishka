@@ -1,16 +1,17 @@
 .week-product {
   background-color: $white;
-  padding-top: 24px;
-  padding-bottom: 38px;
+  padding-top: 22px;
+  padding-bottom: 48px;
   position: relative;
 
   @media #{$min-width-tablet} {
-    padding-bottom: 65px;
+    padding-bottom: 75px;
+    padding-top: 14px;
   }
 
   @media #{$min-width-desktop} {
     padding-left: 225px;
-    padding-top: 102px;
+    padding-top: 92px;
     padding-bottom: 95px;
   }
 }
@@ -28,7 +29,7 @@
   }
 
   @media #{$min-width-desktop} {
-    padding-right: 578px;
+    padding-right: 582px;
   }
 }
 
@@ -67,8 +68,9 @@
   @media #{$min-width-tablet} {
     padding-right: 26px;
     padding-left: 26px;
+    line-height: 17px;
     margin-top: auto;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     max-width: 126px;
     text-align: center;
   }
@@ -76,7 +78,7 @@
   @media #{$min-width-desktop} {
     position: absolute;
     left: 70px;
-    top: 136px;
+    top: 128px;
   }
 }
 
@@ -84,8 +86,8 @@
   font-weight: bold;
   text-align: center;
   font-size: 17px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 26px;
+  padding-top: 26px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -109,7 +111,7 @@
     padding-bottom: 34px;
 
     @media #{$min-width-desktop} {
-      padding-bottom: 44px;
+      padding-bottom: 46px;
       z-index: 1;
     }
   }
@@ -132,34 +134,35 @@
   border-bottom: 1px solid $middle-gray;
 
   @media #{$min-width-desktop} {
-    padding-top: 10px;
-    padding-bottom: 11px;
+    padding-top: 8px;
+    padding-bottom: 12px;
   }
 }
 
 .week-product__value {
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 29px;
+  padding-right: 26px;
 
   @media #{$min-width-tablet} {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }
 
 .week-product__image-block {
   display: flex;
+  line-height: 0;
 }
 
 .week-product__image {
   @media #{$min-width-tablet} {
     position: absolute;
-    top: 150px;
+    top: 142px;
     right: 50px;
   }
 
   @media #{$min-width-desktop} {
-    top: 70px;
+    top: 60px;
     right: 50px;
   }
 }

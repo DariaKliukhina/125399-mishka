@@ -19,12 +19,21 @@
 .product-list__item {
   min-height: 103px;
   padding-left: 30px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 24px;
+  padding-bottom: 16px;
   box-sizing: border-box;
   text-decoration: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  color: $aquamarine-darker--50;
+
+  &:hover {
+    color: $aquamarine-darker--70;
+  }
+
+  &:active {
+    color: $aquamarine-darker--30;
+  }
 
   &:nth-child(odd) {
     background-color: $aquamarine;
@@ -35,15 +44,37 @@
   }
 
   &--decor {
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
+    padding-right: 35px;
+  }
+
+  &--toy {
+    padding-right: 27px;
   }
 
   @media #{$min-width-tablet} {
     flex-grow: 1;
-    min-height: 118px;
+    min-height: 128px;
     padding-left: 36px;
+    width: 50%;
+    padding-top: 28px;
+
+    &--decor {
+      padding-right: 36px;
+    }
+
+    &--toy {
+      padding-right: 33px;
+    }
+  }
+
+  @media #{$min-width-desktop} {
+    &--decor {
+      padding-right: 36px;
+    }
+
+    &--toy {
+      padding-right: 35px;
+    }
   }
 }
 
@@ -52,6 +83,8 @@
   font-size: 19px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
   max-width: 140px;
 
   &:active {
@@ -61,6 +94,8 @@
   @media #{$min-width-tablet} {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -68,5 +103,6 @@
   @media #{$min-width-tablet} {
     padding-left: 50px;
     padding-right: 50px;
+    width: 100%;
   }
 }

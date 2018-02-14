@@ -1,7 +1,11 @@
 .page-footer {
-  background-color: $light-gray;
+  background-color: $page-main;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media #{$min-width-tablet} {
+    padding-bottom: 30px;
+  }
 
   @media #{$min-width-desktop} {
     padding-bottom: 30px;
@@ -24,6 +28,19 @@
   @media #{$min-width-tablet} {
     display: block;
     margin-right: auto;
-    padding-top: 40px;
+    padding-top: 38px;
+
+  }
+}
+
+.main-footer__logo-link {
+  color: $black;
+
+  &:hover {
+    color: $aquamarine;
+  }
+
+  &:active {
+    color: $aquamarine--30;
   }
 }
