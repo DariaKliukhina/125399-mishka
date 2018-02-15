@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 26px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 
@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 79px;
-    padding-bottom: 120px;
+    padding-bottom: 116px;
   }
 
   @media #{$min-width-desktop} {
@@ -21,6 +21,20 @@
 
 .reviews__wrapper {
   position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 110% auto;
+  }
 
   @media #{$min-width-tablet} {
     background-image: url("../img/review@1x.jpg");

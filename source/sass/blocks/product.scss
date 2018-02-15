@@ -10,6 +10,12 @@
     }
   }
 
+  &:active {
+    .product__about-wrapper {
+      box-shadow: 0 3px 5px 0 $black--10;
+    }
+  }
+
   @media #{$min-width-tablet} {
     flex-direction: row;
     margin-bottom: 54px;
@@ -88,6 +94,7 @@
   padding-bottom: 6px;
   font-weight: bold;
   font-size: 17px;
+  color: $black;
 
   &:hover {
     color: $black--60;
@@ -104,23 +111,7 @@
 
 .product__link {
   text-decoration: none;
-  color: $black;
-
-  &:hover {
-    .product__item-price {
-      color: $aquamarine;
-    }
-  }
-
-  &:active {
-    .product__item-price {
-      color: $aquamarine--30;
-    }
-
-    .product__about-wrapper {
-      box-shadow: 0 3px 5px 0 $black--10;
-    }
-  }
+  display: block;
 }
 
 .product__features {
@@ -142,6 +133,14 @@
   justify-content: space-between;
   margin-top: auto;
   color: $black--20;
+
+  &:hover {
+    color: $aquamarine;
+  }
+
+  &:active {
+    color: $aquamarine--30;
+  }
 
   @media #{$min-width-desktop} {
     padding-bottom: 26px;

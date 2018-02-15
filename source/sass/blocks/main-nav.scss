@@ -129,7 +129,6 @@
     opacity: 0.3;
   }
 
-
   @media #{$min-width-tablet} {
     width: 113px;
     height: 46px;
@@ -278,12 +277,25 @@
 }
 
 .main-nav__toggle {
-  background-color: $gray;
+  background-image: url(../img/icon-menu-open.svg);
   font-size: 0;
   line-height: 0;
   border: none;
   width: 24px;
   height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  background-size: 20px 14px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 5px;
+
+  &--open {
+    background-image: url(../img/icon-menu-close.svg);
+    background-size: 22px 22px;
+  }
 
   @media #{$min-width-tablet} {
     display: none;

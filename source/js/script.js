@@ -1,7 +1,6 @@
 var menuToggle = document.querySelector(".main-nav__toggle");
 var menugroup1 = document.querySelector(".main-nav__group--1");
 var menugroup2 = document.querySelector(".main-nav__group--2");
-
 var link = document.querySelector(".modal__open");
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".modal__add");
@@ -33,7 +32,7 @@ window.addEventListener("keydown", function (evt) {
 });
 menuToggle.addEventListener("click", function (evt) {
   evt.preventDefault();
+  menuToggle.classList.toggle("main-nav__toggle--open");
   menugroup1.classList.toggle("display-none");
   menugroup2.classList.toggle("display-none");
-  user.focus();
 });

@@ -68,6 +68,8 @@
   }
 
   @media #{$min-width-desktop} {
+    min-height: 138px;
+
     &--decor {
       padding-right: 36px;
     }
