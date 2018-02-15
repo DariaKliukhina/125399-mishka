@@ -1,6 +1,6 @@
 .contacts {
   background-color: $white;
-  padding-top: 40px;
+  padding-top: 30px;
   margin-bottom: 20px;
   position: relative;
   box-sizing: border-box;
@@ -18,13 +18,13 @@
   margin-bottom: 20px;
 
   @media #{$min-width-tablet} {
-    padding-top: 20px;
+    padding-top: 28px;
     margin-right: auto;
     margin-bottom: 30px;
   }
 
   @media #{$min-width-desktop} {
-    padding-top: 82px;
+    padding-top: 90px;
     padding-right: 0;
     margin-right: auto;
     margin-bottom: 74px;
@@ -38,6 +38,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 12px;
+  position: relative;
 
   @media #{$min-width-tablet} {
     font-size: 43px;
@@ -61,6 +62,7 @@
 
   @media #{$min-width-tablet} {
     flex-direction: row;
+    font-size: 17px;
   }
 
   @media #{$min-width-desktop} {
@@ -125,19 +127,37 @@
 }
 
 .contacts__write-us {
-  margin-top: 39px;
-  margin-bottom: 39px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  font-size: 18px;
 
   @media #{$min-width-tablet} {
     max-width: 230px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 54px;
-    margin-bottom: 58px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-size: 17px;
   }
 
   @media #{$min-width-desktop} {
     margin-left: 175px;
     margin-bottom: 106px;
+  }
+}
+
+.contacts__icon-flag {
+  display: none;
+
+  @media #{$min-width-tablet} {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 2px;
+  }
+
+  @media #{$min-width-desktop} {
+    top: 14px;
+    left: 64px;
   }
 }

@@ -99,11 +99,20 @@
 }
 
 .form__contact-row {
+  color: $black--20;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $aquamarine;
+  }
+
   @media #{$min-width-tablet} {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: $light-gray;
+
   }
 }
 
@@ -157,6 +166,8 @@
 
 .form__phone-position,
 .form__e-mail-position {
+  position: relative;
+
   @media #{$min-width-tablet} {
     padding-left: 22px;
     width: 78.3%;
@@ -236,5 +247,19 @@
     margin-top: 0;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+.form__contact-icon {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+
+  @media #{$min-width-tablet} {
+    right: 24px;
+  }
+
+  @media #{$min-width-desktop} {
+    right: 128px;
   }
 }
