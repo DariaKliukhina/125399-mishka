@@ -1,17 +1,25 @@
 var menuToggle = document.querySelector(".main-nav__toggle");
 var menugroup1 = document.querySelector(".main-nav__group--1");
 var menugroup2 = document.querySelector(".main-nav__group--2");
-var link = document.querySelector(".modal__open");
+var link = document.querySelector(".week-product__buy");
+var products = document.querySelector(".products");
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".modal__add");
 var overlay = document.querySelector(".modal__overlay");
+products.addEventListener("click", function (evt) {
+  if (evt.target.classList.contains("product__icon")){
+    popup.classList.add("modal__show");
+    overlay.classList.add("modal__overlay-show");
+    user.focus();
+  }
+});
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
+  alert("test");
   popup.classList.add("modal__show");
   overlay.classList.add("modal__overlay-show");
   user.focus();
 });
-
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal__show");
