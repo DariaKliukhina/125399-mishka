@@ -1,11 +1,11 @@
 .week-product {
   background-color: $white;
   padding-top: 22px;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
   position: relative;
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-size: 110% auto;
 
   @media #{$min-width-tablet} {
@@ -17,6 +17,8 @@
     padding-left: 225px;
     padding-top: 82px;
     padding-bottom: 95px;
+    background-size: 92% auto;
+    background-position: bottom left 50px;
   }
 }
 
