@@ -120,7 +120,6 @@
 }
 
 .main-nav__logo-image {
-
   &:hover {
     opacity: 0.6;
   }
@@ -277,7 +276,7 @@
 }
 
 .main-nav__toggle {
-  background-image: url(../img/icon-menu-open.svg);
+  background-image: url("../img/icon-menu-open.svg");
   font-size: 0;
   line-height: 0;
   border: none;
@@ -293,7 +292,7 @@
   margin-top: 5px;
 
   &--open {
-    background-image: url(../img/icon-menu-close.svg);
+    background-image: url("../img/icon-menu-close.svg");
     background-size: 22px 22px;
   }
 

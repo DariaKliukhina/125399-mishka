@@ -62,6 +62,7 @@
 
 .product__image-block {
   line-height: 0;
+
   @media #{$min-width-tablet} {
     width: 50%;
     min-height: 328px;
