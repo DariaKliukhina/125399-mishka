@@ -29,8 +29,8 @@
 
     padding-top: 104px;
     padding-bottom: 32px;
-    padding-left: 19.5%;
-    padding-right: 19.5%;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
 
@@ -85,8 +85,8 @@
 
   @media #{$min-width-desktop} {
     &--send {
-      padding-left: 19.5%;
-      padding-right: 19.5%;
+      padding-left: 225px;
+      padding-right: 225px;
     }
   }
 }

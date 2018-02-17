@@ -5,7 +5,7 @@ var link = document.querySelector(".week-product__buy");
 var products = document.querySelector(".products");
 var popup = document.querySelector(".modal");
 var close = document.querySelector(".modal__add");
-var overlay = document.querySelector(".modal__overlay");
+var overlay = document.querySelector(".modal-overlay");
 if(products) {
   products.addEventListener("click", function (evt) {
     if (evt.target.classList.contains("product__icon")) {

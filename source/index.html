@@ -6,7 +6,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="fonts/opensans.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Mishka</title>
-  <script src="build/js/picturefill.min.js"></script>
+  <script src="../build/js/picturefill.min.js"></script>
 </head>
 <body>
 <div style="display: none">
@@ -101,7 +101,7 @@
         </picture>
       </div>
       <p class="week-product__price">Цена: 990 руб.</p>
-      <button class="week-product__buy button modal__open" type="button">Заказать</button>
+      <button class="week-product__buy button" type="button">Заказать</button>
     </div>
   </section>
   <section class="about wrapper">
@@ -150,8 +150,10 @@
     <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item  slider">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <a class="reviews__author-insta" href="#">@misssssiskras</a>
+          <div class="reviews__author-block">
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <a class="reviews__author-insta" href="#">@misssssiskras</a>
+          </div>
         </blockquote>
       <p class="reviews__toggles toggle">
         <button class="reviews__toggle-item toggle__item" type="button">Назад
@@ -218,7 +220,7 @@
     </form>
     </div>
   </section>
-  <div class="modal__overlay display-none"></div>
+  <div class="modal-overlay display-none"></div>
 </main>
 <footer class="page-footer">
   <div class="wrapper page-footer__wrapper">
