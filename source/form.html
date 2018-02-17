@@ -8,7 +8,7 @@
 </head>
 <body>
 <div style="display: none">
-  <include src="source/img/sprite.svg"></include>
+  <include src="build/img/sprite.svg"></include>
 </div>
 <svg style="display:none">
   <symbol id="icon-search" viewBox="-1 -0.8 17.6 17.6">
@@ -217,7 +217,8 @@
 <footer class="page-footer">
   <div class="wrapper page-footer__wrapper">
     <div class="page-footer__logo">
-      <a class="main-footer__logo-link" href="index.html">
+      <a class="page-footer__logo-link" href="index.html">
+        На главную
         <svg width="102px" height="34px">
           <use xlink:href="#logo-footer"></use>
         </svg>
@@ -245,9 +246,12 @@
     <div class="copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">Разработано</p>
-        <svg width="27px" height="34px">
-          <use xlink:href="#logo-htmlacademy"></use>
-        </svg>
+        <div class="copyright__academy-logo">
+          В html-academy
+          <svg width="27px" height="34px">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </div>
       </a>
     </div>
   </div>
