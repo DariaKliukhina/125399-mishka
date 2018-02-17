@@ -112,10 +112,12 @@
 }
 
 .main-nav__logo {
-  margin-right: 66px;
+  padding-left: 80px;
+  flex-grow: 1;
 
   @media #{$min-width-tablet} {
     margin-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -225,6 +227,10 @@
     &--form {
       font-size: 17px;
       padding-top: 32px;
+    }
+
+    &--catalog {
+      border-right: 1px solid $gray--10;
     }
 
     &--form {

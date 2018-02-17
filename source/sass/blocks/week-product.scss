@@ -6,7 +6,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 110% auto;
+  background-size: contain;
 
   @media #{$min-width-tablet} {
     padding-bottom: 70px;
@@ -84,7 +84,7 @@
   @media #{$min-width-desktop} {
     position: absolute;
     left: 70px;
-    top: 118px;
+    top: 85px;
   }
 }
 

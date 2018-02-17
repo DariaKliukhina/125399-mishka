@@ -30,7 +30,7 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-position: bottom;
       background-repeat: repeat-x;
-      background-size: 110% auto;
+      background-size: contain;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -71,16 +71,4 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.main-top__zigzag {
-  display: none;
-  position: absolute;
-  bottom: -7px;
-  right: 0;
-  width: 100%;
-
-  @media #{$min-width-tablet} {
-    display: block;
-  }
 }

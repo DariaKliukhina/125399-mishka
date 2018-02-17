@@ -39,7 +39,7 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("build/img"));
 });
 gulp.task("html", function() {
-  return gulp.src("source/img/*.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
@@ -61,7 +61,7 @@ gulp.task("webp", function () {
 });
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -83,6 +83,7 @@ gulp.task("build", function (done) {
 gulp.task("copy", function (done) {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
+    "source/*.html",
     "source/img/**",
     "source/js/**"
   ], {
