@@ -32,11 +32,6 @@
   font-size: 17px;
   line-height: 18px;
 
-  &--phone,
-  &--mail {
-    color: $gray;
-  }
-
   &::placeholder {
     color: $gray--30;
     font-size: 17px;
@@ -61,6 +56,7 @@
   &--mail {
     padding-top: 14px;
     padding-bottom: 16px;
+    color: $gray;
   }
 
   @media #{$min-width-tablet} {
