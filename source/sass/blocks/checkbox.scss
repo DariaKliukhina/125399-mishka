@@ -1,4 +1,4 @@
-.checkbox {
+.checkbox__item {
   display: block;
   padding-top: 14px;
   padding-bottom: 23px;
@@ -66,7 +66,7 @@
 .checkbox__control {
   display: none;
 
-  &:checked + .checkbox::after {
+  &:checked + .checkbox__item::after {
     content: "";
     display: block;
     width: 23px;
