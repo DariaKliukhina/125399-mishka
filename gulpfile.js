@@ -15,7 +15,7 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
-
+var uglify = require("gulp-uglify");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -70,11 +70,18 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html").on("change", server.reload);
 });
+gulp.task("uglify", function () {
+  gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
 gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
     "style",
+    "uglify",
     "sprite",
     "html",
     done
@@ -94,3 +101,4 @@ gulp.task("copy", function (done) {
 gulp.task("clean", function () {
   return del("build");
 });
+

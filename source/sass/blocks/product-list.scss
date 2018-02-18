@@ -10,6 +10,7 @@
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
+    align-items: flex-end;
   }
 
   @media #{$min-width-desktop} {
@@ -69,14 +70,19 @@
   }
 
   @media #{$min-width-desktop} {
-    //min-height: 138px;
-
     &--decor {
       padding-right: 36px;
     }
 
     &--toy {
       padding-right: 35px;
+    }
+
+    &:hover {
+      padding-top: 23px;
+      padding-bottom: 21px;
+      min-height: 133px;
+      margin-top: -5px;
     }
   }
 }
