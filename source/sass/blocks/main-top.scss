@@ -6,9 +6,7 @@
   background-size: 575px auto;
   margin-top: 0;
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: block;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
