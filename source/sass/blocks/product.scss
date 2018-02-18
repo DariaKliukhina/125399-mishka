@@ -18,11 +18,12 @@
 
   @media #{$min-width-tablet} {
     flex-direction: row;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media #{$min-width-desktop} {
     flex-direction: column;
+    margin-bottom: 58px;
     width: 30.1%;
     margin-right: 4.8%;
 
@@ -42,6 +43,7 @@
 
 
   @media #{$min-width-tablet} {
+    padding-top: 8px;
     padding-right: 28px;
     padding-left: 28px;
     justify-content: space-between;
@@ -65,7 +67,7 @@
   line-height: 0;
 
   @media #{$min-width-tablet} {
-    width: 53%;
+    width: 50%;
     min-height: 328px;
   }
 
