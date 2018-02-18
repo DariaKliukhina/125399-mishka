@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Open Sans";
+  font-display: swap;
   src: url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
 }
@@ -29,7 +30,7 @@ body {
   margin-right: auto;
   font-size: 15px;
   line-height: 24px;
-  color: $base-color;
+  color: $gray;
   min-width: 320px;
 }
 

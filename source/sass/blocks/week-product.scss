@@ -1,18 +1,24 @@
 .week-product {
   background-color: $white;
   padding-top: 22px;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
   position: relative;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media #{$min-width-tablet} {
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     padding-top: 14px;
   }
 
   @media #{$min-width-desktop} {
     padding-left: 225px;
-    padding-top: 92px;
+    padding-top: 82px;
     padding-bottom: 95px;
+    background-size: 92% auto;
+    background-position: bottom left 50px;
   }
 }
 
@@ -69,7 +75,7 @@
     padding-right: 26px;
     padding-left: 26px;
     line-height: 17px;
-    margin-top: auto;
+    margin-top: 33px;
     margin-bottom: 10px;
     max-width: 126px;
     text-align: center;
@@ -78,7 +84,7 @@
   @media #{$min-width-desktop} {
     position: absolute;
     left: 70px;
-    top: 128px;
+    top: 85px;
   }
 }
 
@@ -162,7 +168,7 @@
   }
 
   @media #{$min-width-desktop} {
-    top: 60px;
+    top: 50px;
     right: 50px;
   }
 }

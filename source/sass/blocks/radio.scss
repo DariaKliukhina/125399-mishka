@@ -1,4 +1,4 @@
-.radio {
+.radio__item {
   display: block;
   padding-top: 10px;
   padding-bottom: 14px;
@@ -57,9 +57,9 @@
 }
 
 .radio__control {
-  display: none;
+  //display: none;
 
-  &:checked + .radio::after {
+  &:checked + .radio__item::after {
     content: "";
     display: block;
     width: 16px;

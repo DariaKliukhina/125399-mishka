@@ -29,11 +29,12 @@
     display: block;
     margin-right: auto;
     padding-top: 38px;
-
   }
 }
 
-.main-footer__logo-link {
+.page-footer__logo-link {
+  font-size: 0;
+  line-height: 0;
   color: $black;
 
   &:hover {

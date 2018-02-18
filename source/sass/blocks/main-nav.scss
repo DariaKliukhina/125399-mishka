@@ -112,15 +112,16 @@
 }
 
 .main-nav__logo {
-  margin-right: 66px;
+  padding-left: 80px;
+  flex-grow: 1;
 
   @media #{$min-width-tablet} {
     margin-right: 0;
+    padding-left: 0;
   }
 }
 
 .main-nav__logo-image {
-
   &:hover {
     opacity: 0.6;
   }
@@ -128,7 +129,6 @@
   &:active {
     opacity: 0.3;
   }
-
 
   @media #{$min-width-tablet} {
     width: 113px;
@@ -229,6 +229,10 @@
       padding-top: 32px;
     }
 
+    &--catalog {
+      border-right: 1px solid $gray--10;
+    }
+
     &--form {
       padding-left: 36px;
     }
@@ -278,12 +282,25 @@
 }
 
 .main-nav__toggle {
-  background-color: $gray;
+  background-image: url("../img/icon-menu-open.svg");
   font-size: 0;
   line-height: 0;
   border: none;
   width: 24px;
   height: 24px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  background-size: 20px 14px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 5px;
+
+  &--open {
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: 22px 22px;
+  }
 
   @media #{$min-width-tablet} {
     display: none;

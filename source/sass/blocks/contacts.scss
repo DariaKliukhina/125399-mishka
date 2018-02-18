@@ -1,16 +1,21 @@
 .contacts {
   background-color: $white;
-  padding-top: 30px;
+  padding-top: 40px;
   margin-bottom: 20px;
   position: relative;
   box-sizing: border-box;
 
+  @media #{$min-width-tablet} {
+    padding-top: 34px;
+  }
+
   @media #{$min-width-desktop} {
-    padding-right: 630px;
+    padding-right: 615px;
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    padding-top: 30px;
   }
 }
 

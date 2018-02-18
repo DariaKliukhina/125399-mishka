@@ -4,6 +4,7 @@
 @import "../sass/global/wrapper";
 @import "../sass/global/global";
 @import "../sass/blocks/display-none";
+@import "../sass/blocks/visually-hidden";
 @import "../sass/blocks/main-top";
 @import "../sass/blocks/button";
 @import "../sass/blocks/page-footer";
@@ -27,4 +28,5 @@
 @import "../sass/blocks/input";
 @import "../sass/blocks/copyright";
 @import "../sass/blocks/social";
-@import "../sass/blocks/zigzag";
+@import "../sass/blocks/modal-overlay";
+@import "../sass/blocks/form-text";

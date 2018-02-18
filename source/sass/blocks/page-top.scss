@@ -8,11 +8,15 @@
 
   @media #{$min-width-tablet} {
     padding-top: 96px;
-    padding-bottom: 80;
+    padding-bottom: 90px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 110% auto;
   }
 
   @media #{$min-width-desktop} {
     padding-top: 94px;
-    padding-bottom: 102px;
+    padding-bottom: 122px;
   }
 }
