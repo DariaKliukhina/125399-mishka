@@ -2,14 +2,12 @@
   padding-bottom: 55px;
   display: flex;
   flex-direction: column;
+  font-size: 17px;
 
   @media #{$min-width-tablet} {
     padding-top: 23px;
-    padding-bottom: 50px;
-  }
-
-  @media #{$min-width-desktop} {
     padding-bottom: 48px;
+    font-size: 19px;
   }
 }
 
@@ -20,7 +18,7 @@
     }
 
     &:nth-child(even) {
-      background-color: $light-gray;
+      background-color: $page-main;
     }
 
     &:last-child {
@@ -28,12 +26,12 @@
     }
 
     &--color {
-      padding-top: 50px;
-      padding-bottom: 24px;
+      padding-top: 52px;
+      padding-bottom: 26px;
     }
 
     &--name {
-      padding-top: 52px;
+      padding-top: 50px;
     }
 
     &--else {
@@ -45,6 +43,10 @@
   @media #{$min-width-desktop} {
     &--else {
       padding-bottom: 44px;
+    }
+
+    &--color {
+      padding-top: 53px;
     }
   }
 }
@@ -90,7 +92,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: $light-gray;
+    background-color: $page-main;
   }
 }
 
@@ -107,6 +109,7 @@
 
   @media #{$min-width-desktop} {
     padding-left: 0;
+    padding-bottom: 24px;
   }
 }
 

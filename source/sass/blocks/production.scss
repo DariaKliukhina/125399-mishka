@@ -15,15 +15,17 @@
 
   @media #{$min-width-desktop} {
     padding-left: 72.4%;
-    padding-top: 40px;
+    padding-top: 36px;
     padding-right: 58px;
     padding-bottom: 58px;
     margin-bottom: 104px;
+    min-height: 455px;
   }
 }
 
 .production__video-container {
   position: relative;
+  line-height: 0;
 }
 
 .production__video {
@@ -31,14 +33,15 @@
 
   @media #{$min-width-tablet} {
     order: 1;
-    margin-bottom: 30px;
-    min-height: 456px;
+    min-height: 455px;
     background-size: contain;
     background-color: $light-gray;
+    margin-bottom: 38px;
   }
 
   @media #{$min-width-desktop} {
     height: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -58,21 +61,6 @@
     transform: translateY(-50%) translateX(-50%) scale(0.8);
     transition-duration: 1s;
     opacity: 0.3;
-  }
-
-  @media #{$min-width-tablet} {
-    transform: translateY(-75%) translateX(-50%);
-
-    &:hover {
-      transform: translateY(-75%) translateX(-50%) scale(1.2);
-      transition-duration: 1s;
-    }
-
-    &:active {
-      transform: translateY(-75%) translateX(-50%) scale(0.8);
-      transition-duration: 1s;
-      opacity: 0.3;
-    }
   }
 }
 
